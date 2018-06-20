@@ -16,7 +16,7 @@ client.on('ready', () => {
 });
 
 //yooo commands
-btoa.on("message", function(message){
+bot.on("message", function(message){
      if (message.author.equals(bot.user)) return;
 
      if (!message.content.startWith(PREFIX)) return;
