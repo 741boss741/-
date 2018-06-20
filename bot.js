@@ -3,11 +3,11 @@ const client = new Discord.Client();
 const PREFIX = "!>";
 
 var fortunes = [
-    "Yup"
-    "Nope"
-    "Maybe"
-    "Die"
-    "Fuck You"
+    "Yup",
+    "Nope",
+    "Maybe",
+    "Die",
+    "Fuck You",
     "Super Poop"
 ];
 
@@ -16,7 +16,7 @@ client.on('ready', () => {
 });
 
 //yooo commands
-client.on('message', function(message){
+client.on("message", function(message){
      if (message.author.equals(bot.user)) return;
 
      if (!message.content.startWith(PREFIX)) return;
@@ -40,4 +40,4 @@ client.on('message', function(message){
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login(NDU3NjEyNzU5Mjg3MzMyODY2.DgxVDQ.f1jx_uxDQs_dnGjOpw6Id_Ovn5w);
