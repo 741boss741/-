@@ -1,15 +1,10 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const botSettings = require("./botsettings.json")
+const Discord = require("discord.js");
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+const bot = new Discord.Client({disableEveryone: true});
+
+bot.on("ready", () =?> {
+    console.log('Bot is ready! ${bot.user.username}');
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-});
-
-//THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+bot.login("botSettings.token");
