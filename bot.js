@@ -3,12 +3,12 @@ const Discord = require('discord.js');
 const PREFIX = "!>";
 
 var fortunes = [
-    "Yup"
-    "Nope"
-    "Maybe"
-    "Die"
-    "Fuck You"
-    "Super Poop"
+    "Yup",
+    "Nope",
+    "Maybe",
+    "Die",
+    "Fuck You",
+    "Super Poop",
 ];
 
 bot.on("ready", function() {
