@@ -1,22 +1,22 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+
 const PREFIX = "!>";
 
 var fortunes = [
-    "Yup",
-    "Nope",
-    "Maybe",
-    "Die",
-    "Fuck You",
+    "Yup"
+    "Nope"
+    "Maybe"
+    "Die"
+    "Fuck You"
     "Super Poop"
 ];
 
-client.on('ready', () => {
-    console.log('I am ready!');
+bot.on("ready", function() {
+    console.log("Ready")
 });
 
 //yooo commands
-client.on("message", function(message){
+bot.on("message", function(message) {
      if (message.author.equals(bot.user)) return;
 
      if (!message.content.startWith(PREFIX)) return;
