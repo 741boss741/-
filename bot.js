@@ -888,7 +888,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '!>invite') {
-      message.author.send(' رابط البوت |  https://discordapp.com/api/oauth2/authorize?client_id=457612759287332866&permissions=8&scope=bot ').catch(e => console.log(e.stack));
+      message.author.send(' رابط البوت |  https://discordapp.com/api/oauth2/authorize?client_id=459476648090140672&permissions=8&scope=bot ').catch(e => console.log(e.stack));
 
     }
    } 
