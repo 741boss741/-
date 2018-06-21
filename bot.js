@@ -636,9 +636,9 @@ var memes = ["https://scontent-cai1-1.xx.fbcdn.net/v/t1.15752-9/35991835_7744897
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
     if(message.content.startsWith(prefix + 'memes')) {
-         var memes = new Discord.RichEmbed()
+         var meme = new Discord.RichEmbed()
 .setImage(memes[Math.floor(Math.random() * memes.length)])
-message.channel.sendEmbed(memes);
+message.channel.sendEmbed(meme);
     }
 });
 
@@ -648,9 +648,9 @@ var dab = ["https://scontent-sea1-1.cdninstagram.com/vp/f74bf3c2451cbf4a08a541e4
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
     if(message.content.startsWith(prefix + 'dab')) {
-         var dab = new Discord.RichEmbed()
+         var dabs = new Discord.RichEmbed()
 .setImage(dab[Math.floor(Math.random() * dab.length)])
-message.channel.sendEmbed(dab);
+message.channel.sendEmbed(dabs);
     }
 });
 
@@ -660,9 +660,9 @@ var bl7a = ["https://i.imgur.com/HLW70zm.jpg","https://i.ytimg.com/vi/Fj62InSHWF
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
     if(message.content.startsWith(prefix + 'bl7a')) {
-         var bl7a = new Discord.RichEmbed()
+         var bl7as = new Discord.RichEmbed()
 .setImage(bl7a[Math.floor(Math.random() * bl7a.length)])
-message.channel.sendEmbed(bl7a);
+message.channel.sendEmbed(bl7as);
     }
 });
 
