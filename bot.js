@@ -827,6 +827,7 @@ client.on("guildCreate", guild => {
   
 client.on('ready', () => {
    client.user.setGame(" !>help | !>invite ");
+   client.user.setStatus("dnd");
 }); 
 
 client.on("message", message => {
