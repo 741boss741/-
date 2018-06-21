@@ -1232,4 +1232,4 @@ client.on('message', message => {
 });
 
 
-client.login('NDU3NjEyNzU5Mjg3MzMyODY2.Dgxqww.e_UUJUURbNmn-Uqa-wWqlV7YWvQ');
+client.login('NDU5NDc2NjQ4MDkwMTQwNjcy.Dg2wvA.aTtiuuUtfSb72ek7UpHW3ZPkKoY');
