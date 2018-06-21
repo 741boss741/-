@@ -6,8 +6,8 @@ var jimp = require('jimp');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-   client.user.setGame(" !>help | !>invite ");
-}); 
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
@@ -20,7 +20,6 @@ client.on('ready',  () => {
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
-  client.user.setGame(" !>help | !>invite ");
 });
 
 
