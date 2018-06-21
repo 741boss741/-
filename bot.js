@@ -71,6 +71,14 @@ client.on('message', message => {
     }
 });
 
+var prefix = "!>";
+var fr = ["😂","🔥","🐸"]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+    if(message.content.startsWith(prefix + 'emoji')) {
+       message.react('fr[Math.floor(Math.random() * fr.length)]')
+    }
+});
 
 client.on('ready', () => {
   console.log(`im redey`);
