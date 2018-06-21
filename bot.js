@@ -1,8 +1,4 @@
 const Discord = require("discord.js");
-const ms = require("ms");
-const fs = require("fs");
-var Canvas = require('canvas');
-var jimp = require('jimp');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -72,15 +68,6 @@ client.on('message', message => {
 client.on('message', message => {
    if (message.content === "!>roll 4") {
   message.channel.sendMessage(Math.floor(Math.random() * 100));
-    }
-});
-
-var prefix = "!>";
-var fr = ["😂","🔥","🐸"]
-    client.on('message', message => {
-        var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith(prefix + 'emoji')) {
-       message.react('fr[Math.floor(Math.random() * fr.length)]')
     }
 });
 
