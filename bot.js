@@ -1520,26 +1520,14 @@ client.on("roleCreate", rc => {
   }
  });
 
-client.on("guildMemberAdd", member => {
-let welcomer = member.guild.channels.find("name","welcome");
-if(!welcomer) return;
-if(welcomer) {
-moment.locale('ar-ly');
-var h = member.user;
-let XD = new Discord.RichEmbed()
-.setColor('RANDOM')
-.setThumbnail(h.avatarURL)
-.setAuthor(h.username,h.avatarURL)
-.addField(': تاريخ دخولك الدسكورد',`${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} **\n** \`${moment(member.user.createdAt).fromNow()}\``,true)            
-.addField(': تاريخ دخوله السيرفر',`${moment(member.joinedAt).format('D/M/YYYY h:mm a ')} \n\`\`${moment(member.joinedAt).startOf(' ').fromNow()}\`\``, true)      
-.setFooter(`${h.tag}`,"https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif")
-welcomer.send({embed:XD});          
-         
+client.on('guildMemberAdd', member => {
+var welcomer =  member.guild.channels.find('name', 'welcome');
+
 var Canvas = require('canvas')
 var jimp = require('jimp')
-      
-const w = [];
-      
+
+const w = [``];
+
 let Image = Canvas.Image,
 canvas = new Canvas(401, 202),
 ctx = canvas.getContext('2d');
@@ -1555,28 +1543,28 @@ let BG = Canvas.Image;
 let ground = new Image;
 ground.src = Background;
 ctx.drawImage(ground, 0, 0, 401, 202);
-      
+
 })
-      
+
 let url = member.user.displayAvatarURL.endsWith(".webp") ? member.user.displayAvatarURL.slice(5, -20) + ".gif" : member.user.displayAvatarURL;
 jimp.read(url, (err, ava) => {
 if (err) return console.log(err);
 ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
 if (err) return console.log(err);
-      
-/AVATARً
+
+//AVATAR�
 let Avatar = Canvas.Image;
 let ava = new Avatar;
 ava.src = buf;
 ctx.drawImage(ava, 152, 27, 95, 95);
-                              
+
 //wl
-ctx.font = '20px Arial Bold';
-ctx.fontSize = '20px';
-ctx.fillStyle = "#FFFFFF";
+ctx.font = '12px Arial Bold';
+ctx.fontSize = '10px';
+ctx.fillStyle = "#000000";
 ctx.textAlign = "center";
 ctx.fillText(member.user.username, 200, 154);
-                              
+    
 //NAMEً
 ctx.font = '20px Arial';
 ctx.fontSize = '28px';
@@ -1584,12 +1572,11 @@ ctx.fillStyle = "#FFFFFF";
 ctx.textAlign = "center";
 ctx.fillText(`انت العضو رقم  ${member.guild.memberCount} !! `, 200, 190);
 welcomer.sendFile(canvas.to1Buffer())
-      
-      
-      
+
+
+
 })
 })
-}
 });
 
 client.login('NDU3NjEyNzU5Mjg3MzMyODY2.Dgxqww.e_UUJUURbNmn-Uqa-wWqlV7YWvQ');
