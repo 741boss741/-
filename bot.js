@@ -11,6 +11,8 @@ client.on('message', msg => {
   }
 });
 
+ client.user.setStatus('Hey Noob ?!', 'Watch Porn Now off !', 'to Help Type "!>help" haha !', 'Made by XDROWN') 
+
 client.on('ready',  () => {
   console.log('By : XDROWN#5950');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
