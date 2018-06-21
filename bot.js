@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+bot.on('ready', () => {
+  bot.user.setGame('Hey Noob ?!', 'Watch Porn Now off !', 'to Help Type "!>help" haha !', 'Made by XDROWN')
 });
 
 client.on('message', msg => {
@@ -10,8 +10,6 @@ client.on('message', msg => {
     msg.reply('Pong!');
   }
 });
-
- client.user.setStatus('Hey Noob ?!', 'Watch Porn Now off !', 'to Help Type "!>help" haha !', 'Made by XDROWN') 
 
 client.on('ready',  () => {
   console.log('By : XDROWN#5950');
