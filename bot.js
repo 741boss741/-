@@ -863,7 +863,7 @@ client.on("message", message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '!>support') {
-      message.author.send(' |https://discord.gg/QUf4W9k| لـ أي استفسار').catch(e => console.log(e.stack));
+      message.author.send(' |https://discord.gg/YAWSkf7| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
    } 
