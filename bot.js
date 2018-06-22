@@ -699,7 +699,8 @@ client.on("guildCreate", guild => {
   
   
 client.on('ready', () => {
-   client.user.setGame(" XDhelp | XDinvite ");
+   client.user.setGame(" For Help type !>help ");
+   client.user.setStatus("dnd");
 }); 
 
 client.on("message", message => {
