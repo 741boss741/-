@@ -1632,4 +1632,4 @@ client.on("roleCreate", rc => {
  });
 
 
-client.login('NDU5NDc2NjQ4MDkwMTQwNjcy.Dg4P4A.h1VS4nYExe8gDZt2Li15J57oJsI');
+client.login('NDU5NDc2NjQ4MDkwMTQwNjcy.Dg4T_A.kMuSOvr0oD7fAMroj6g_xoAcELY');
