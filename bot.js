@@ -1,9 +1,4 @@
 const Discord = require("discord.js");
-const ms = require("ms");
-var fs = require("fs");
-var Canvas = require('canvas');
-var jimp = require('jimp');
-var file = require('file-system');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -32,20 +27,21 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription(`
-PowerX 『اسم البوت』
-
-XDROWN#5950『مصمم البوت』
-
-『!>help』:kissing_heart:『اذا تبي جميع الاوامر مع اوامر اضافية』:dizzy_face:
-
-『!>help2』:ghost:『اذا تبي الاوامر العامة』:flushed:
-
-『!>help3』:open_mouth:『اذا تبي الاوامر الادارية』:thermometer_face:
-
-『!>music』:open_mouth:『اذا تبي اوامر الموسيقي』:thermometer_face:
-
-『:money_mouth:』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『:wink:』`)
+      .addField(" PowerX 『اسم البوت』", true)
+      
+      .addField("XDROWN#5950『مصمم البوت』", true)
+      
+      .addField("『!>help』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
+      
+	    .addField("『!>help2』👻『اذا تبي الاوامر العامة』😳", true)
+	    
+      .addField("『!>help3』😮『اذا تبي  الاوامر الادارية』🤒", true)
+  
+      .addField("『!>music』😮『اذا تبي اوامر الموسيقي』🎶", true)
+      
+      .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
+      
+      .addField("『👻』『 سيتم اضافة بعض الاشياء التي تخص ماين كرافت! 』『😘』", true)
       
   message.channel.sendMessage({embed});
 
@@ -232,58 +228,108 @@ client.on("message", message => {
 -⚠ صيانه كل يوم
 -💵 مجاني بل كامل 
 -📚 البوت عربي و سيتم اضافه اللغه النكليزية
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 💎『اوامر عامة』💎
                         
 💎!>server 『معلومات عن السيرفر』                      
+
 💎!>servers 『علشان تشوف البوت بكم سيرفر اون لاين 』  
+
 💎!>bot 『لمعرف البوت بكم سيرفر』
+
 💎!>date 『لمعرفه التاريخ』
+
 💎!>ping 『لمعرفه سرعه البوت』
+
 💎!>members 『معلومات عن الاعضاء』
+
 💎!>embed 『خاصيه غرد لكن بغير طريقه』
+
 💎!>say 『لي يكرر الكلام الذي تقوله』
+
 💎!>animal  『كود لي اضهار صور  للحيوانات』
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 👑『اوامر ادارية』👑
+
 👑!>rooms 『لمعرفه عدد رومات السيرفر』
+
 👑!>ban 『لتعطي شخص باند』
+
 👑!>kick 『لتعطي شخص كيك』
+
 👑!>clear 『لمسح الشات برقم』
+
 👑!>edit  『لتعديل رساله 』
+
 👑!>ct  مـلاحظه: الاسم انت تختاره『لي انشاء روم كتابي』
+
 👑!>cv  مـلاحظه: الاسم انت تختاره『لي انشاء روم صوتي』
+
 👑!>delet  『كـود يحذف الـروم سواء صوتي او كتابي』
+
 👑!>mute  『كـود الميوت』
+
 👑!>unmute  『كـود فك الميوت』
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 🎲『القرعة』🎲
+
 🎲!>roll 1   『القرعة من 1 الى 25』
+
 🎲!>roll 2   『القرعة من 1 الى 50』
+
 🎲!>roll 3   『القرعة من 1 الى 75』
+
 🎲!>roll 4   『القرعة من 1 الى 100』
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 🎮『العاب』🎮
+
 🎮!>كت تويت
+
 🎮!>مريم 
+
 🎮!>خواطر 
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 🎴『اوامر الصور』🎴
+
 🎴!>avatar 『لي عرض صورتك او صوره اي شخص』
+
 🎴!>image 『لي عرض صوره السيرفر』
+
 🎴قريبا
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 🎎『انواع الترحيب』🎎
+
 🎎 ترحيب 1 / ترحيب 2 
+
 🎎 ترحيب 3 / ترحيب 4
+
 🎎 ترحيب 5 / ترحيب 6 
+
 🎎 ترحيب 7 / ترحيب 8
+
 🎎 ترحيب 9 / ترحيب 10
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 💎『الدعم الفني والمساعدة』💎
+
 !>invite | القسم الاول لي اضافه البوت 
 !>support| القسم الثاني  الدعم الفني و المساعدة
-القسم الثالث مصمم البوت | Ahmed Atia#4432,TMGame Arab#9280
+
+القسم الثالث مصمم البوت| XDROWN#5950
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 `)
 
@@ -310,26 +356,38 @@ client.on("message", message => {
 	  
 	  
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 👑『اوامر ادارية』👑
-👑!>ban 『لتعطي شخص باند』
-👑!>kick 『لتعطي شخص كيك』
-👑!>clear 『لمسح الشات برقم』
-👑!>edit  『لتعديل رساله 』
-👑!>ct  مـلاحظه: الاسم انت تختاره『لي انشاء روم كتابي』
-👑!>cv  مـلاحظه: الاسم انت تختاره『لي انشاء روم صوتي』
-👑!>delet  『كـود يحذف الـروم سواء صوتي او كتابي』
-👑!>bc  『خيارات البرودكاست』 
+
 👑!>rooms 『لمعرفه عدد رومات السيرفر』
+
+👑!>ban 『لتعطي شخص باند』
+
+👑!>kick 『لتعطي شخص كيك』
+
+👑!>clear 『لمسح الشات برقم』
+
+👑!>edit  『لتعديل رساله 』
+
+👑!>ct  مـلاحظه: الاسم انت تختاره『لي انشاء روم كتابي』
+
+👑!>cv  مـلاحظه: الاسم انت تختاره『لي انشاء روم صوتي』
+
+👑!>delet  『كـود يحذف الـروم سواء صوتي او كتابي』
+
 👑!>mute  『كـود الميوت』
+
 👑!>unmute  『كـود فك الميوت』
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 	  
 💎『الدعم الفني والمساعدة』💎
-!>invite | القسم الاول لي اضافه البوت 
-!>support| القسم الثاني  الدعم الفني و المساعدة
-القسم الثالث مصمم البوت | Ahmed Atia#4432,TMGame Arab#9280
-EMAIL
- 
+
+XDinvite | القسم الاول لي اضافه البوت 
+XDsupport| القسم الثاني  الدعم الفني و المساعدة
+
+القسم الثالث مصمم البوت| XDROWN#5950
+
 `)
 
 
@@ -353,24 +411,36 @@ client.on("message", message => {
 	  
 	  
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
 💎『اوامر عامة』💎
                         
 💎!>server 『معلومات عن السيرفر』                      
+
 💎!>servers 『علشان تشوف البوت بكم سيرفر اون لاين 』  
+
 💎!>bot 『لمعرف البوت بكم سيرفر』
+
 💎!>date 『لمعرفه التاريخ』
+
 💎!>ping 『لمعرفه سرعه البوت』
+
 💎!>members 『معلومات عن الاعضاء』
+
 💎!>embed 『خاصيه غرد لكن بغير طريقه』
+
 💎!>say 『لي يكرر الكلام الذي تقوله』
+
 💎!>animal  『كود لي اضهار صور  للحيوانات』
+
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 	  
 💎『الدعم الفني والمساعدة』💎
-!>invite | القسم الاول لي اضافه البوت 
-!>support| القسم الثاني  الدعم الفني و المساعدة
-القسم الثالث مصمم البوت | Ahmed Atia#4432,TMGame Arab#9280
-EMAIL 
+
+XDinvite | القسم الاول لي اضافه البوت 
+XDsupport| القسم الثاني  الدعم الفني و المساعدة
+
+القسم الثالث مصمم البوت| XDROWN#5950
+
 `)
 
 
@@ -379,51 +449,56 @@ message.author.sendEmbed(embed)
   message.channel.send('🚫الخاص مغلق');
 });
 
+}
+}); 
+
 
 client.on("message", message => {
-    if (message.content === "!>help3") {
-     message.react("😂")
-     const embed = new Discord.RichEmbed() 
-         .setColor("#ffff00")
-         .setThumbnail(message.author.avatarURL)
-         .setDescription(`
-         
+ if (message.content === "!>music") {
+  message.react("🎶")
+  const embed = new Discord.RichEmbed() 
+      .setColor("RANDOM")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`
+	  
+	  
+● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
-   ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
-
-   🎶『اوامر الموسيقي』🎶
+🎶『اوامر الموسيقي』🎶
                         
-   🎶!>play name of song 『لتشغيل الاغنية التي تريدها』  
+🎶!>play name of song 『لتشغيل الاغنية التي تريدها』                      
 
-   🎶!>queue 『لمعرفة قائمة الموسيقي』  
+🎶!>queue 『لمعرفة قائمة الموسيقي』  
 
-   🎶!>skip 『لتخطي الموسيقي الحالية』
+🎶!>skip 『لتخطي الموسيقي الحالية』
 
-   🎶!>np 『لمعرفة اسم الموسيقي الحالية』
+🎶!>np 『لمعرفة اسم الموسيقي الحالية』
 
-   🎶!>pause 『لأيقاف الموسيقي لمدة مؤقته』
+🎶!>pause 『لأيقاف الموسيقي لمدة مؤقته』
 
-   🎶!>resume 『لأستئناف الموسيقي』
+🎶!>resume 『لأستئناف الموسيقي』
 
-   ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
-         
-   🎶『الدعم الفني والمساعدة』🎶
-   !>invite | القسم الاول لي اضافه البوت 
-   !>support| القسم الثاني  الدعم الفني و المساعدة
+● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+	  
+🎶『الدعم الفني والمساعدة』🎶
 
-   القسم الثالث مصمم البوت | XDROWN#5950 
-   EMAIL 
-   `)
-   
-   
-   message.author.sendEmbed(embed)
-   .catch(() => {
-     message.channel.send('🚫الخاص مغلق');
-   });
+!>invite | القسم الاول لي اضافه البوت 
+!>support| القسم الثاني  الدعم الفني و المساعدة
 
+القسم الثالث مصمم البوت| XDROWN#5950
+
+`)
+
+
+message.author.sendEmbed(embed)
+.catch(() => {
+  message.channel.send('🚫الخاص مغلق');
+});
 
 }
 }); 
+
+
 
 client.on('message', message => {
     if (message.content.startsWith("!>avatar")) {
@@ -627,7 +702,6 @@ message.channel.sendEmbed(bl7as);
     }
 });
 
-//end
 
 client.on('message', message => {
 var prefix = "!>";
@@ -724,7 +798,7 @@ client.on('message', message => {
 
     client.on('message', message => {
               if (!message.channel.guild) return;
-      if(message.content =='!>members')
+      if(message.content =='XDmembers')
       var IzRo = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL) 
@@ -753,7 +827,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-     if (message.content === "!>bot") {
+     if (message.content === "XDbot") {
             if(!message.channel.guild) return message.reply('** This command only for servers **');
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
@@ -859,7 +933,7 @@ if (message.content === '!>رابط') {
   
 
 client.on('message', message => {
-    if (message.content.startsWith("رابط")) {
+    if (message.content.startsWith("!>رابط")) {
 
   message.channel.createInvite({
         thing: true,
@@ -917,7 +991,7 @@ client.on('message', message => {
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('!>bc-users')){
+if (message.content.startsWith('XDbc-users')){
  if(!message.author.id === 'اي دي صاحب البوت') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
@@ -1242,41 +1316,41 @@ var prefix = "!>";
 if (!message.content.startsWith(prefix)) return;
 var args = message.content.split(' ').slice(1);
 var argresult = args.join(' ');
-if (message.author.id == 281425658494844928) return;
+if (message.author.id == 228174175007801354) return;
 if (message.content.startsWith(prefix + 'playing')) {
-if (message.author.id !== '281425658494844928') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '228174175007801354') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult);
  message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
 } else
 
 
 if (message.content.startsWith(prefix + 'stream')) {
-if (message.author.id !== '281425658494844928') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '228174175007801354') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
  message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
 } else
 
 if (message.content.startsWith(prefix + 'setname')) {
-if (message.author.id !== '281425658494844928') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '228174175007801354') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setUsername(argresult).the
 message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
 return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
 } else
  
 if (message.content.startsWith(prefix + 'setavatar')) {
-if (message.author.id !== '281425658494844928') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '228174175007801354') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setAvatar(argresult);
  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
 } else
 
 
 if (message.content.startsWith(prefix + 'watching')) {
-if (message.author.id !== '281425658494844928') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '228174175007801354') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
  client.user.setActivity(argresult, {type : 'watching'});
 message.channel.sendMessage(`**${argresult}** : تم تغيير الووتشينق الى`)
 }
 if (message.content.startsWith(prefix + 'listeing')) {
-if (message.author.id !== '281425658494844928') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '228174175007801354') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setActivity(argresult, {type : 'listening'});
 message.channel.sendMessage(`**${argresult}**: تم تغير الاستماع الي`)
 }
@@ -1432,7 +1506,7 @@ client.on('guildMemberAdd', member => {
     if (!member || !member.id || !member.guild) return;
     const guild = member.guild;
 	
-    const channel = member.guild.channels.find('name', '🔬audit-log');
+    const channel = member.guild.channels.find('name', 'log');
     if (!channel) return;
     let memberavatar = member.user.avatarURL
     const isNew = (new Date() - member.user.createdTimestamp) < 900000 ? '🆕' : '';
@@ -1452,7 +1526,7 @@ client.on('guildMemberRemove', member => {
     if (!member || !member.id || !member.guild) return;
     const guild = member.guild;
 	
-    const channel = member.guild.channels.find('name', '🔬audit-log');
+    const channel = member.guild.channels.find('name', 'log');
     if (!channel) return;
     let memberavatar = member.user.avatarURL
     
@@ -1468,7 +1542,7 @@ client.on('guildMemberRemove', member => {
 
 client.on('messageDelete', message => {
     if (!message || !message.id || !message.content || !message.guild || message.author.bot) return;
-    const channel = message.guild.channels.find('name', '🔬audit-log');
+    const channel = message.guild.channels.find('name', 'log');
     if (!channel) return;
     
     let embed = new Discord.RichEmbed()
@@ -1485,7 +1559,7 @@ client.on('messageDelete', message => {
 client.on('messageUpdate', (message, newMessage) => {
     if (message.content === newMessage.content) return;
     if (!message || !message.id || !message.content || !message.guild || message.author.bot) return;
-    const channel = message.guild.channels.find('name', '🔬audit-log');
+    const channel = message.guild.channels.find('name', 'log');
     if (!channel) return;
     
     let embed = new Discord.RichEmbed()
@@ -1510,7 +1584,7 @@ client.on("roleCreate", rc => {
   });
   
   client.on("roleDelete",  rd => {
-  const channel = rd.guild.channels.find("name", "🔬audit-log")
+  const channel = rd.guild.channels.find("name", "log")
   if(channel) {
   var embed = new Discord.RichEmbed()
   .setTitle(rd.guild.name)
@@ -1523,54 +1597,6 @@ client.on("roleCreate", rc => {
 
 client.on('guildMemberAdd', member => {
 const welcomer =  member.guild.channels.find('name', 'welcome');
-
-var Canvas = require('canvas')
-var jimp = require('jimp')
-
-const w = [`./welcome 2.png`];
-
-let Image = Canvas.Image,
-canvas = new Canvas(401, 202),
-ctx = canvas.getContext('2d');
-ctx.patternQuality = 'bilinear';
-ctx.filter = 'bilinear';
-ctx.antialias = 'subpixel';
-ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
-ctx.shadowOffsetY = 2;
-ctx.shadowBlur = 2;
-fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
-if (err) return console.log(err)
-let BG = Canvas.Image;
-let ground = new Image;
-ground.src = Background;
-ctx.drawImage(ground, 0, 0, 401, 202);
-
-})
-
-let url = member.user.displayAvatarURL.endsWith(".webp") ? member.user.displayAvatarURL.slice(5, -20) + ".gif" : member.user.displayAvatarURL;
-jimp.read(url, (err, ava) => {
-if (err) return console.log(err);
-ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
-if (err) return console.log(err);
-
-//AVATAR�
-let Avatar = Canvas.Image;
-let ava = new Avatar;
-ava.src = buf;
-ctx.drawImage(ava, 152, 27, 95, 95);
-
-//wl
-ctx.font = '12px Arial Bold';
-ctx.fontSize = '10px';
-ctx.fillStyle = "#000000";
-ctx.textAlign = "center";
-ctx.fillText(member.user.username, 200, 154);
-welcomer.sendFile(canvas.toBuffer())
-
-
-
-})
-})
 });
 
 client.login(process.env.BOT_TOKEN);
