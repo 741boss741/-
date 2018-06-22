@@ -17,7 +17,7 @@ client.on('message', msg => {
 });
 
 client.on('ready',  () => {
-  console.log('By : Ahmed Atia#4432');
+  console.log('By : XDROWN#5950');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
@@ -28,16 +28,23 @@ client.on("message", message => {
              
      if(!message.channel.guild) return;
 
- if (message.content === "XDhelp") {
+ if (message.content === "!>help") {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription(`
-XDBot 『اسم البوت』
-Ahmed Atia#4432,TMGame Arab#9280『مصمم البوت』
-『XhelpD』:kissing_heart:『اذا تبي جميع الاوامر مع اوامر اضافية』:dizzy_face:
-『XhelpDD』:ghost:『اذا تبي الاوامر العامة』:flushed:
-『XhelpDDD』:open_mouth:『اذا تبي الاوامر الادارية』:thermometer_face:
+PowerX 『اسم البوت』
+
+XDROWN#5950『مصمم البوت』
+
+『!>help』:kissing_heart:『اذا تبي جميع الاوامر مع اوامر اضافية』:dizzy_face:
+
+『!>help2』:ghost:『اذا تبي الاوامر العامة』:flushed:
+
+『!>help3』:open_mouth:『اذا تبي الاوامر الادارية』:thermometer_face:
+
+『!>music』:open_mouth:『اذا تبي اوامر الموسيقي』:thermometer_face:
+
 『:money_mouth:』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『:wink:』`)
       
   message.channel.sendMessage({embed});
@@ -49,25 +56,25 @@ Ahmed Atia#4432,TMGame Arab#9280『مصمم البوت』
 
 
 client.on('message', message => {
-   if (message.content === "XDroll 1") {
+   if (message.content === "!>roll 1") {
   message.channel.sendMessage(Math.floor(Math.random() * 25));
     }
 });
  
 client.on('message', message => {
-   if (message.content === "XDroll 2") {
+   if (message.content === "!>roll 2") {
   message.channel.sendMessage(Math.floor(Math.random() * 50));
     }
 });
  
 client.on('message', message => {
-   if (message.content === "XDroll 3") {
+   if (message.content === "!>roll 3") {
   message.channel.sendMessage(Math.floor(Math.random() * 75));
     }
 });
  
 client.on('message', message => {
-   if (message.content === "XDroll 4") {
+   if (message.content === "!>roll 4") {
   message.channel.sendMessage(Math.floor(Math.random() * 100));
     }
 });
@@ -125,7 +132,7 @@ const zead = [
    '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدنا في نشر البوت وادخل هذا السيرفر  ***'
 ]
  client.on('message', message => {
- if (message.content.startsWith('XDمريم')) {
+ if (message.content.startsWith('!>مريم')) {
   var mariam= new Discord.RichEmbed()
   .setTitle("لعبة مريم ..")
   .setColor('RANDOM')
@@ -169,7 +176,7 @@ const zead = [
 ]
 
  client.on('message', message => {
-   if (message.content.startsWith("XDكت تويت")) {
+   if (message.content.startsWith("!>كت تويت")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -197,7 +204,7 @@ const secreT = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith("XDخواطر")) {
+   if (message.content.startsWith("!>خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -213,7 +220,7 @@ const secreT = [
 
 
 client.on("message", message => {
- if (message.content === "XhelpD") {
+ if (message.content === "!>help") {
         message.react("😘")
            message.react("😵")
   const embed = new Discord.RichEmbed() 
@@ -228,42 +235,42 @@ client.on("message", message => {
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 💎『اوامر عامة』💎
                         
-💎XDserver 『معلومات عن السيرفر』                      
-💎XDservers 『علشان تشوف البوت بكم سيرفر اون لاين 』  
-💎XDbot 『لمعرف البوت بكم سيرفر』
-💎XDdate 『لمعرفه التاريخ』
-💎XDping 『لمعرفه سرعه البوت』
-💎XDmembers 『معلومات عن الاعضاء』
-💎XDembed 『خاصيه غرد لكن بغير طريقه』
-💎XDsay 『لي يكرر الكلام الذي تقوله』
-💎XDanimal  『كود لي اضهار صور  للحيوانات』
+💎!>server 『معلومات عن السيرفر』                      
+💎!>servers 『علشان تشوف البوت بكم سيرفر اون لاين 』  
+💎!>bot 『لمعرف البوت بكم سيرفر』
+💎!>date 『لمعرفه التاريخ』
+💎!>ping 『لمعرفه سرعه البوت』
+💎!>members 『معلومات عن الاعضاء』
+💎!>embed 『خاصيه غرد لكن بغير طريقه』
+💎!>say 『لي يكرر الكلام الذي تقوله』
+💎!>animal  『كود لي اضهار صور  للحيوانات』
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 👑『اوامر ادارية』👑
-👑XDrooms 『لمعرفه عدد رومات السيرفر』
-👑XDban 『لتعطي شخص باند』
-👑XDkick 『لتعطي شخص كيك』
-👑XDclear 『لمسح الشات برقم』
-👑XDedit  『لتعديل رساله 』
-👑XDct  مـلاحظه: الاسم انت تختاره『لي انشاء روم كتابي』
-👑XDcv  مـلاحظه: الاسم انت تختاره『لي انشاء روم صوتي』
-👑XDdelet  『كـود يحذف الـروم سواء صوتي او كتابي』
-👑XDmute  『كـود الميوت』
-👑XDunmute  『كـود فك الميوت』
+👑!>rooms 『لمعرفه عدد رومات السيرفر』
+👑!>ban 『لتعطي شخص باند』
+👑!>kick 『لتعطي شخص كيك』
+👑!>clear 『لمسح الشات برقم』
+👑!>edit  『لتعديل رساله 』
+👑!>ct  مـلاحظه: الاسم انت تختاره『لي انشاء روم كتابي』
+👑!>cv  مـلاحظه: الاسم انت تختاره『لي انشاء روم صوتي』
+👑!>delet  『كـود يحذف الـروم سواء صوتي او كتابي』
+👑!>mute  『كـود الميوت』
+👑!>unmute  『كـود فك الميوت』
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 🎲『القرعة』🎲
-🎲XDroll 1   『القرعة من 1 الى 25』
-🎲XDroll 2   『القرعة من 1 الى 50』
-🎲XDroll 3   『القرعة من 1 الى 75』
-🎲XDroll 4   『القرعة من 1 الى 100』
+🎲!>roll 1   『القرعة من 1 الى 25』
+🎲!>roll 2   『القرعة من 1 الى 50』
+🎲!>roll 3   『القرعة من 1 الى 75』
+🎲!>roll 4   『القرعة من 1 الى 100』
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 🎮『العاب』🎮
-🎮XDكت تويت
-🎮XDمريم 
-🎮XDخواطر 
+🎮!>كت تويت
+🎮!>مريم 
+🎮!>خواطر 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 🎴『اوامر الصور』🎴
-🎴XDavatar 『لي عرض صورتك او صوره اي شخص』
-🎴XDimage 『لي عرض صوره السيرفر』
+🎴!>avatar 『لي عرض صورتك او صوره اي شخص』
+🎴!>image 『لي عرض صوره السيرفر』
 🎴قريبا
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 🎎『انواع الترحيب』🎎
@@ -274,8 +281,8 @@ client.on("message", message => {
 🎎 ترحيب 9 / ترحيب 10
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 💎『الدعم الفني والمساعدة』💎
-XDinvite | القسم الاول لي اضافه البوت 
-XDsupport| القسم الثاني  الدعم الفني و المساعدة
+!>invite | القسم الاول لي اضافه البوت 
+!>support| القسم الثاني  الدعم الفني و المساعدة
 القسم الثالث مصمم البوت | Ahmed Atia#4432,TMGame Arab#9280
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 `)
@@ -293,7 +300,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "XhelpDDD") {
+ if (message.content === "!>help2") {
         message.react("😮")
                 message.react("🤒")
   const embed = new Discord.RichEmbed() 
@@ -304,22 +311,22 @@ client.on("message", message => {
 	  
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 👑『اوامر ادارية』👑
-👑XDban 『لتعطي شخص باند』
-👑XDkick 『لتعطي شخص كيك』
-👑XDclear 『لمسح الشات برقم』
-👑XDedit  『لتعديل رساله 』
-👑XDct  مـلاحظه: الاسم انت تختاره『لي انشاء روم كتابي』
-👑XDcv  مـلاحظه: الاسم انت تختاره『لي انشاء روم صوتي』
-👑XDdelet  『كـود يحذف الـروم سواء صوتي او كتابي』
-👑XDbc  『خيارات البرودكاست』 
-👑XDrooms 『لمعرفه عدد رومات السيرفر』
-👑XDmute  『كـود الميوت』
-👑XDunmute  『كـود فك الميوت』
+👑!>ban 『لتعطي شخص باند』
+👑!>kick 『لتعطي شخص كيك』
+👑!>clear 『لمسح الشات برقم』
+👑!>edit  『لتعديل رساله 』
+👑!>ct  مـلاحظه: الاسم انت تختاره『لي انشاء روم كتابي』
+👑!>cv  مـلاحظه: الاسم انت تختاره『لي انشاء روم صوتي』
+👑!>delet  『كـود يحذف الـروم سواء صوتي او كتابي』
+👑!>bc  『خيارات البرودكاست』 
+👑!>rooms 『لمعرفه عدد رومات السيرفر』
+👑!>mute  『كـود الميوت』
+👑!>unmute  『كـود فك الميوت』
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 	  
 💎『الدعم الفني والمساعدة』💎
-XDinvite | القسم الاول لي اضافه البوت 
-XDsupport| القسم الثاني  الدعم الفني و المساعدة
+!>invite | القسم الاول لي اضافه البوت 
+!>support| القسم الثاني  الدعم الفني و المساعدة
 القسم الثالث مصمم البوت | Ahmed Atia#4432,TMGame Arab#9280
 EMAIL
  
@@ -337,7 +344,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "XhelpDD") {
+ if (message.content === "!>help3") {
   message.react("😂")
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
@@ -348,20 +355,20 @@ client.on("message", message => {
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 💎『اوامر عامة』💎
                         
-💎XDserver 『معلومات عن السيرفر』                      
-💎XDservers 『علشان تشوف البوت بكم سيرفر اون لاين 』  
-💎XDbot 『لمعرف البوت بكم سيرفر』
-💎XDdate 『لمعرفه التاريخ』
-💎XDping 『لمعرفه سرعه البوت』
-💎XDmembers 『معلومات عن الاعضاء』
-💎XDembed 『خاصيه غرد لكن بغير طريقه』
-💎XDsay 『لي يكرر الكلام الذي تقوله』
-💎XDanimal  『كود لي اضهار صور  للحيوانات』
+💎!>server 『معلومات عن السيرفر』                      
+💎!>servers 『علشان تشوف البوت بكم سيرفر اون لاين 』  
+💎!>bot 『لمعرف البوت بكم سيرفر』
+💎!>date 『لمعرفه التاريخ』
+💎!>ping 『لمعرفه سرعه البوت』
+💎!>members 『معلومات عن الاعضاء』
+💎!>embed 『خاصيه غرد لكن بغير طريقه』
+💎!>say 『لي يكرر الكلام الذي تقوله』
+💎!>animal  『كود لي اضهار صور  للحيوانات』
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 	  
 💎『الدعم الفني والمساعدة』💎
-XDinvite | القسم الاول لي اضافه البوت 
-XDsupport| القسم الثاني  الدعم الفني و المساعدة
+!>invite | القسم الاول لي اضافه البوت 
+!>support| القسم الثاني  الدعم الفني و المساعدة
 القسم الثالث مصمم البوت | Ahmed Atia#4432,TMGame Arab#9280
 EMAIL 
 `)
@@ -372,11 +379,54 @@ message.author.sendEmbed(embed)
   message.channel.send('🚫الخاص مغلق');
 });
 
+
+client.on("message", message => {
+    if (message.content === "!>help3") {
+     message.react("😂")
+     const embed = new Discord.RichEmbed() 
+         .setColor("#ffff00")
+         .setThumbnail(message.author.avatarURL)
+         .setDescription(`
+         
+
+   ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+
+   🎶『اوامر الموسيقي』🎶
+                        
+   🎶!>play name of song 『لتشغيل الاغنية التي تريدها』  
+
+   🎶!>queue 『لمعرفة قائمة الموسيقي』  
+
+   🎶!>skip 『لتخطي الموسيقي الحالية』
+
+   🎶!>np 『لمعرفة اسم الموسيقي الحالية』
+
+   🎶!>pause 『لأيقاف الموسيقي لمدة مؤقته』
+
+   🎶!>resume 『لأستئناف الموسيقي』
+
+   ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
+         
+   🎶『الدعم الفني والمساعدة』🎶
+   !>invite | القسم الاول لي اضافه البوت 
+   !>support| القسم الثاني  الدعم الفني و المساعدة
+
+   القسم الثالث مصمم البوت | XDROWN#5950 
+   EMAIL 
+   `)
+   
+   
+   message.author.sendEmbed(embed)
+   .catch(() => {
+     message.channel.send('🚫الخاص مغلق');
+   });
+
+
 }
 }); 
 
 client.on('message', message => {
-    if (message.content.startsWith("XDavatar")) {
+    if (message.content.startsWith("!>avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -394,7 +444,7 @@ client.on('message', message => {
 
                     client.on('message', message => {
                                 if(!message.channel.guild) return;
-                        if (message.content.startsWith('XDping')) {
+                        if (message.content.startsWith('!>ping')) {
                             if(!message.channel.guild) return;
                             var msg = `${Date.now() - message.createdTimestamp}`
                             var api = `${Math.round(client.ping)}`
@@ -410,7 +460,7 @@ client.on('message', message => {
                     });
 
 client.on("message", (message) => {
-if (message.content.startsWith("XDct")) {
+if (message.content.startsWith("!>ct")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'text');
@@ -419,7 +469,7 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 }
 });
 client.on("message", (message) => {
-if (message.content.startsWith("XDcv")) {
+if (message.content.startsWith("!>cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
@@ -433,7 +483,7 @@ if (message.content.startsWith("XDcv")) {
 
 
 
-var prefix = "XD";
+var prefix = "!>";
 
 client.on('message', message => {
   if (message.author.bot) return;
@@ -444,7 +494,7 @@ client.on('message', message => {
 
   let args = message.content.split(" ").slice(1);
 
-// XDsay
+// !>say
   if (command === "say") {
           message.delete()
     message.channel.sendMessage(args.join(" ")).catch(console.error);
@@ -465,7 +515,7 @@ if (command == "embed") {
 
 
    client.on("message", message => {
-    const prefix = "XD"
+    const prefix = "!>"
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
@@ -484,7 +534,7 @@ if (command == "embed") {
   });
   
   client.on('message', (message) => {
-    if (message.content.startsWith('XDkick')) {
+    if (message.content.startsWith('!>kick')) {
       if(!message.member.hasPermission('KICK_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.kick().then((member) => {
@@ -497,7 +547,7 @@ if (command == "embed") {
 
 
 client.on('message', (message) => {
-    if (message.content.startsWith('XDban ')) {
+    if (message.content.startsWith('!>ban ')) {
       if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.ban().then((member) => {
@@ -509,7 +559,7 @@ client.on('message', (message) => {
 });
   
   client.on("message", (message) => {
-    if (message.content.startsWith('XDdelet')) {
+    if (message.content.startsWith('!>delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
@@ -521,7 +571,7 @@ client.on('message', (message) => {
   
   
 client.on('message', message => {
-     if (message.content === "XDservers") {
+     if (message.content === "!>servers") {
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField("**| السيرفرات |**" , client.guilds.size)
@@ -529,7 +579,7 @@ client.on('message', message => {
     }
 });
 
-  var prefix = "XD";
+  var prefix = "!>";
 var cats = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","http://www.dogbazar.org/wp-content/uploads/2014/09/british-bull-dog-puppies.jpg","http://cdn2-www.dogtime.com/assets/uploads/gallery/german-shepherd-dog-breed-pictures/standing-7.jpg","http://cdn.akc.org/Marketplace/Breeds/German_Shepherd_Dog_SERP.jpg","https://animalso.com/wp-content/uploads/2016/12/black-german-shepherd_2.jpg","https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpg","https://www.petfinder.com/wp-content/uploads/2012/11/101438745-cat-conjunctivitis-causes.jpg","http://www.i-love-cats.com/images/2015/04/12/cat-wallpaper-38.jpg","https://www.aspca.org/sites/default/files/cat-care_urine-marking_main-image.jpg","https://s-media-cache-ak0.pinimg.com/originals/f0/3b/76/f03b7614dfadbbe4c2e8f88b69d12e04.jpg","http://www.rd.com/wp-content/uploads/sites/2/2016/04/15-cat-wants-to-tell-you-attention.jpg","https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg","https://www.adelaidezoo.com.au/wp-content/uploads/sites/2/animals/GiantPanda3Slider.jpg","http://imagem.band.com.br/f_230168.jpg"]
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
@@ -540,8 +590,47 @@ message.channel.sendEmbed(cat);
     }
 });
 
+//memes area
+
+var prefix = "!>";
+var memes = ["https://scontent-cai1-1.xx.fbcdn.net/v/t1.15752-9/35991835_774489796273551_4340597720042438656_n.jpg?_nc_cat=0&_nc_eui2=AeEh31C9mhk6Wb5ikc8KPYhu16kmZG4-ikpMYNY-irTawjRfKs3pRTFg8R-Foy1lFLUtiWdgi6WLPcHC2VezXMv9IO8OBV3XUHLsDYvQ_6-jAg&oh=158ea5073bca5bd074daf6cc02db373f&oe=5BA3E627","https://scontent-cai1-1.xx.fbcdn.net/v/t1.15752-9/35836787_774489856273545_3116994058904403968_n.jpg?_nc_cat=0&_nc_eui2=AeE2pSA3QGuPD17m0f_xdLPDVsnxM7SNc-AVRIOc5B4ebgYO068KndkDzwwAD-YSimH9SEl58EpH7qRPy0FyIzyEKsTnXnuiomJdOC6OgHEQ0Q&oh=b7c21fc3d8293a5b7309d55589b1e0af&oe=5BB29478","https://i.imgur.com/nKeiLcW.jpg","https://i.imgur.com/Ou89M9D.jpg","https://i.imgur.com/eVlU1tS.png","https://i.imgur.com/ONaJuP6.jpg","https://i.imgur.com/Jazv0Nn.jpg","https://i.imgur.com/lxfsXDz.jpg","https://i.imgur.com/LS0TPvs.png","https://i.imgur.com/T7utZo4.jpg","https://i.imgur.com/aSSa51l.jpg","https://i.imgur.com/FxOhBqf.png","http://www.thecarpenterbuilding.com/wp-content/uploads/2016/05/coming-soon.jpg"]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+    if(message.content.startsWith(prefix + 'memes')) {
+         var meme = new Discord.RichEmbed()
+.setImage(memes[Math.floor(Math.random() * memes.length)])
+message.channel.sendEmbed(meme);
+    }
+});
+
+//dab
+  var prefix = "!>";
+var dab = ["https://scontent-sea1-1.cdninstagram.com/vp/f74bf3c2451cbf4a08a541e46de27889/5B5B6139/t51.2885-15/s480x480/e35/16230653_402791260069966_4987205548966412288_n.jpg","http://www.foot24.tn/thumbs/pogba%20dab.variant960x540.dd25b1-650x286.jpg","https://sm1.narvii.com/6602/c1f51eb618f7a36f9a77a934fc3984333c9a8f25_00.jpg","https://i.pinimg.com/originals/f5/84/d6/f584d6fe0d5173d717d1671bfa3f0d14.jpg","https://ih0.redbubble.net/image.259546796.9462/flat,800x800,075,f.jpg","https://upload.wikimedia.org/wikipedia/commons/f/fc/Dab_on_em_spongebob.jpg","https://i.ebayimg.com/images/g/XDQAAOSwTuJYs-7S/s-l300.jpg","https://cdn116.picsart.com/214968289003202.jpg?r1024x1024","https://i.pinimg.com/originals/48/32/5f/48325ffdd52c62e0db33db6edc1a8927.jpg","http://pm1.narvii.com/6815/f775300721729acee96c440a88b64b5864ac19c9v2_00.jpg","https://i.ytimg.com/vi/gp2Ydp-mOQw/maxresdefault.jpg","https://static.vibe.com/files/2017/08/singer-arrested-for-dabbing-1502464143-640x798.jpg","https://cdn6.dissolve.com/p/D23_34_318/D23_34_318_1200.jpg","http://www.thecarpenterbuilding.com/wp-content/uploads/2016/05/coming-soon.jpg"]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+    if(message.content.startsWith(prefix + 'dab')) {
+         var dabs = new Discord.RichEmbed()
+.setImage(dab[Math.floor(Math.random() * dab.length)])
+message.channel.sendEmbed(dabs);
+    }
+});
+
+//bl7a
+  var prefix = "!>";
+var bl7a = ["https://i.imgur.com/HLW70zm.jpg","https://i.ytimg.com/vi/Fj62InSHWFw/hqdefault.jpg","https://3.bp.blogspot.com/-_LXW7-zuWAg/WCituMasayI/AAAAAAADfkU/9YmMWayrvh4wQ2vxZXNuYaWxrEwUCMC8wCLcB/s640/%25D8%25A7%25D9%2584%25D8%25B3%25D9%258A%25D8%25B3%25D9%258A-%25D9%2588-%25D8%25A7%25D9%2584%25D9%2585%25D8%25AC%25D9%2584%25D8%25B3.jpg","https://pbs.twimg.com/profile_images/774920855822430208/dD4LHuD2_400x400.jpg","https://i.imgur.com/54oYVGt.jpg","https://akphoto1.ask.fm/a47/0e9b6/d519/485f/b84d/a7e3b9f02b07/original/2324041.jpg","https://i.imgur.com/kiPFu6v.jpg","https://khaberni-6zrocpuaymq7.stackpathdns.com/uploads/news_model/2018/03/main_image5ab00ac7aef5c.jpg","https://data.whicdn.com/images/234678438/large.jpg","http://www.thecarpenterbuilding.com/wp-content/uploads/2016/05/coming-soon.jpg"]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+    if(message.content.startsWith(prefix + 'bl7a')) {
+         var bl7as = new Discord.RichEmbed()
+.setImage(bl7a[Math.floor(Math.random() * bl7a.length)])
+message.channel.sendEmbed(bl7as);
+    }
+});
+
+//end
+
 client.on('message', message => {
-var prefix = "XD";
+var prefix = "!>";
 
     if (message.author.id === client.user.id) return;
     if (message.guild) {
@@ -569,7 +658,7 @@ return;
 });
 
 client.on('message', message => {
-    if (message.content === "XDserver") {
+    if (message.content === "!>server") {
         if (!message.channel.guild) return
         var verificationLevel = message.guild.verificationLevel;
         const verificationLevels = ['None','Low','Meduim','High','Extreme'];
@@ -596,7 +685,7 @@ client.on('message', message => {
 
 
   client.on('message', message => {
-    if (message.content === "XDrooms") {
+    if (message.content === "!>rooms") {
                       if (!message.guild) return;
 
         var channels = message.guild.channels.map(channels => `${channels.name}, `).join(' ')
@@ -610,7 +699,7 @@ client.on('message', message => {
     }
 });
 
-  var prefix = "XD";
+  var prefix = "!>";
   const HeRo = new Discord.Client();
   client.on('message', message => {
       if (message.content === prefix + "date") {
@@ -635,7 +724,7 @@ client.on('message', message => {
 
     client.on('message', message => {
               if (!message.channel.guild) return;
-      if(message.content =='XDmembers')
+      if(message.content =='!>members')
       var IzRo = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL) 
@@ -652,7 +741,7 @@ client.on('message', message => {
 
 
 
-var prefix = "XD"
+var prefix = "!>"
 
 client.on('message', message => {
     if (message.author.bot) return;
@@ -664,7 +753,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-     if (message.content === "XDbot") {
+     if (message.content === "!>bot") {
             if(!message.channel.guild) return message.reply('** This command only for servers **');
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
@@ -679,7 +768,7 @@ message.channel.sendEmbed(embed);
 
 
 client.on('message', message => {
-    if (message.content === "XDroles") {
+    if (message.content === "!>roles") {
         var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
         const embed = new Discord.RichEmbed()
         .setColor('RANDOM')
@@ -704,7 +793,7 @@ client.on('ready', () => {
 }); 
 
 client.on("message", message => {
-    var prefix = "XD";
+    var prefix = "!>";
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
  if (!args[1]) {
@@ -730,14 +819,14 @@ client.on("message", message => {
  client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', 'welcome');
   if (!channel) return;
-  channel.send(`***بكل حب واحترام وشوق نستقبلك ونتمنى لك قضآء أجمل اللحظات ولآوقات معنا حياك الله***, ${member}`);
+  channel.send(`***اهلا بيك في سرفر اوريو كرافت نتمني لك قضاء يوم ممتع :smile:***, ${member}`);
   
 });
 
 client.on('message', message => {
   if (true) {
-if (message.content === 'XDsupport') {
-      message.author.send(' |https://discord.gg/QUf4W9k| لـ أي استفسار').catch(e => console.log(e.stack));
+if (message.content === '!>support') {
+      message.author.send(' |https://discord.gg/dbzxbC7| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
    } 
@@ -746,7 +835,7 @@ if (message.content === 'XDsupport') {
   
 
 client.on('message', message => {
-     if (message.content === "XDsupport") {
+     if (message.content === "!>support") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
@@ -760,8 +849,8 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (true) {
-if (message.content === 'رابط') {
-      message.author.send(' |https://discord.gg/QUf4W9k| رابط السرفر').catch(e => console.log(e.stack));
+if (message.content === '!>رابط') {
+      message.author.send(' |https://discord.gg/dbzxbC7| رابط السرفر').catch(e => console.log(e.stack));
 
     }
    } 
@@ -803,7 +892,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (true) {
-if (message.content === 'XDinvite') {
+if (message.content === '!>invite') {
       message.author.send(` رابط البوت |  https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958588585 `).catch(e => console.log(e.stack));
 
     }
@@ -813,7 +902,7 @@ if (message.content === 'XDinvite') {
   
 
 client.on('message', message => {
-     if (message.content === "XDinvite") {
+     if (message.content === "!>invite") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
@@ -828,7 +917,7 @@ client.on('message', message => {
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('XDbc-users')){
+if (message.content.startsWith('!>bc-users')){
  if(!message.author.id === 'اي دي صاحب البوت') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
@@ -839,7 +928,7 @@ m.sendMessage(args)
 
 
 client.on('message', message=>{
-    if (message.content ==='XDadd-colors'){
+    if (message.content ==='!>add-colors'){
         if (message.channel.guild){
             if (message.member.hasPermission('MANAGE_ROLES')){
                 setInterval(function(){})
@@ -856,7 +945,7 @@ client.on('message', message=>{
             message.channel.sendMessage(':warning:  This command only in servers')
         }
     }
-    if (message.content === 'XDde-colors'){
+    if (message.content === '!>de-colors'){
                 if (message.channel.guild){
             if (message.member.hasPermission('MANAGE_ROLES')){
                 setInterval(function(){})
@@ -1148,7 +1237,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-var prefix = "XD";
+var prefix = "!>";
 
 if (!message.content.startsWith(prefix)) return;
 var args = message.content.split(' ').slice(1);
@@ -1343,7 +1432,7 @@ client.on('guildMemberAdd', member => {
     if (!member || !member.id || !member.guild) return;
     const guild = member.guild;
 	
-    const channel = member.guild.channels.find('name', 'log');
+    const channel = member.guild.channels.find('name', '🔬audit-log');
     if (!channel) return;
     let memberavatar = member.user.avatarURL
     const isNew = (new Date() - member.user.createdTimestamp) < 900000 ? '🆕' : '';
@@ -1363,7 +1452,7 @@ client.on('guildMemberRemove', member => {
     if (!member || !member.id || !member.guild) return;
     const guild = member.guild;
 	
-    const channel = member.guild.channels.find('name', 'log');
+    const channel = member.guild.channels.find('name', '🔬audit-log');
     if (!channel) return;
     let memberavatar = member.user.avatarURL
     
@@ -1379,7 +1468,7 @@ client.on('guildMemberRemove', member => {
 
 client.on('messageDelete', message => {
     if (!message || !message.id || !message.content || !message.guild || message.author.bot) return;
-    const channel = message.guild.channels.find('name', 'log');
+    const channel = message.guild.channels.find('name', '🔬audit-log');
     if (!channel) return;
     
     let embed = new Discord.RichEmbed()
@@ -1396,7 +1485,7 @@ client.on('messageDelete', message => {
 client.on('messageUpdate', (message, newMessage) => {
     if (message.content === newMessage.content) return;
     if (!message || !message.id || !message.content || !message.guild || message.author.bot) return;
-    const channel = message.guild.channels.find('name', 'log');
+    const channel = message.guild.channels.find('name', '🔬audit-log');
     if (!channel) return;
     
     let embed = new Discord.RichEmbed()
@@ -1421,7 +1510,7 @@ client.on("roleCreate", rc => {
   });
   
   client.on("roleDelete",  rd => {
-  const channel = rd.guild.channels.find("name", "log")
+  const channel = rd.guild.channels.find("name", "🔬audit-log")
   if(channel) {
   var embed = new Discord.RichEmbed()
   .setTitle(rd.guild.name)
