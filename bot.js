@@ -907,7 +907,7 @@ client.on("message", message => {
 
 
  client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'welcome');
+  const channel = member.guild.channels.find('name', '✦welcome🔥');
   if (!channel) return;
   channel.send(`***اهلا بيك في سرفر اوريو كرافت نتمني لك قضاء يوم ممتع :smile:***, ${member}`);
   
