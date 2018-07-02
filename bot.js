@@ -476,6 +476,15 @@ message.channel.send('**تم الارسال في الخاص**');
 
     }
 });
+//servers
+client.on('message', message => {
+     if (message.content === "!>servers") {
+     let embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .addField("**| السيرفرات |**" , client.guilds.size)
+  message.channel.sendEmbed(embed);
+    }
+});
 
 //welc
 client.on("guildMemberAdd", member => {
