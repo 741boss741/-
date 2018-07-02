@@ -5,7 +5,7 @@ const Canvas = require("canvas");
 const jimp = require("jimp");
 const moment = require('moment');
 const yt = require('ytdl-core');
-const prefix = '.'
+const prefix = '!>'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -38,7 +38,7 @@ client.on("message", message => {
              
      if(!message.channel.guild) return;
 
- if (message.content === ".help") {
+ if (message.content === "!>help") {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
@@ -109,6 +109,8 @@ __~~PowerX Bot~~__ By: XDROWN#5950
 ❖ !>roll <number> ➾ role 
 
 ❖ !>profile ➾ see your profile
+
+❖ !>daily ➾ for daily Money
 
 ❖ !>title <text> ➾ for change your profile title
 
@@ -312,6 +314,8 @@ __~~PowerX Bot~~__ By: XDROWN#5950
 ❖ !>roll <number> ➾ قرعه 
 
 ❖ !>profile ➾ لكي تري الملف الشخصي الخاص بك
+
+❖ !>daily ➾ لأموال اليومية
 
 ❖ !>title <text> ➾ لتغير الوصف الخاص بك في الملف الشخصي
 
@@ -841,7 +845,7 @@ message.channel.stopTyping()
 //chat
 client.on('message', message => {
 
-    if (message.content === ".cchat") {
+    if (message.content === "!>cchat") {
                         if(!message.channel.guild) return message.reply(' This command only for servers');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' ليس لديك صلاحيات');
@@ -853,7 +857,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' لي
            });
              }
 
-if (message.content === ".uchat") {
+if (message.content === "!>uchat") {
     if(!message.channel.guild) return message.reply(' This command only for servers');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
@@ -872,7 +876,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 //ping
       client.on('message', message => {
                                 if(!message.channel.guild) return;
-                        if (message.content.startsWith('.ping')) {
+                        if (message.content.startsWith('!>ping')) {
                             if(!message.channel.guild) return;
                             var msg = `${Date.now() - message.createdTimestamp}`
                             var api = `${Math.round(client.ping)}`
@@ -890,7 +894,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 client.on("message", message => {    
           if(!message.channel.guild) return;
    if(message.author.bot) return;
-      if(message.content === ".ser-av"){ 
+      if(message.content === "!>ser-av"){ 
           const embed = new Discord.RichEmbed()
   
       .setTitle(`صورة ** ${message.guild.name} **`)
@@ -930,7 +934,7 @@ message.channel.send(':white_check_mark: **تم الارسال في الخاص**
 });
 //link
 client.on('message', message => {
-    if (message.content.startsWith("رابط")) {
+    if (message.content.startsWith("!>رابط")) {
  
   message.channel.createInvite({
         thing: true,
@@ -969,7 +973,7 @@ client.on('message', msg => {
   let args = msg.content.split(" ").slice(1);
 
     if(command === "clear") {
-        const emoji = client.emojis.find("name", "wastebasket")
+        const emoji = client.emojis.find("name", "log")
     let textxt = args.slice(0).join("");
     if(msg.member.hasPermission("MANAGE_MESSAGES")) {
     if (textxt == "") {
@@ -1003,7 +1007,7 @@ client.on('message', function(message) {
 
 //avatar
 client.on('message', message => {
-    if (message.content.startsWith(".avatar")) {
+    if (message.content.startsWith("!>avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -1022,7 +1026,7 @@ client.on('message', message => {
 //members
     client.on('message', message => {
               if (!message.channel.guild) return;
-      if(message.content =='.members')
+      if(message.content =='!>members')
       var IzRo = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL) 
@@ -1201,7 +1205,7 @@ const secreT = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith("خواطر")) {
+   if (message.content.startsWith("!>خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -1228,7 +1232,7 @@ message.channel.sendEmbed(cat);
 
 const Sra7a = [  ' يا صرخة إحساسي وخنقة دموعي إذا الصّدف جابت مكاني مكانه من داخلي إحساس يعلن خضوعي وفي ظاهري رجال حافظ كيانه',  ' ظامي الوجدان وأشواقك نهر اسقني من عذب معسول الغدير الرّموش السّود والطّرف الحور ليتها عن لحظها لي تستخير أول المشوار في حبّك قهر وآخر المشوار عمري به خطير',  ' حبيبي عادت أسراب الحمام وعادوا الغيّاب وأنا من كثر ما شفت الوجيه اشتقت لأحبابي حبيبي من كثر ما اشتقت لك صرت أكره الأبواب ليّا شفت الوصل، وأهل الوصل ما عتّبوا بابي',  ' أي سرّ يعتري شوقي إليك إنّ شوقي حائر في مقلتيك كلّنا أسرى صبابات الهوى فادنُ منّي إنّني ملك يديك',  ' إِن الغرورَ إِذا تملَّكَ أمّةً كالزّهرِ يخفي الموتَ وهو زؤامُ',  ' إِذا عصفَ الغرورُ برأسِ غِرٍّ توّهمَ أن منكبَهُ جَناحُ',  ' أيّهذا الشّاكي و ما بك داء كن جميلاً ترى الوجود جميلا',  ' في هذه البقاع القصيّة هذه البقاع المهجورة حتى من عواء الذئب أسرجُ ضوء الشّمعة وأسافر',  ' يا نفسُ صَبْراً على ما قد مَنّيتِ به فالحرُّ يصبرُ عند الحادثِ الجَلَلِ',  ' وحسبُ الفتى إِن لمْ ينلْ ما يريدُه مع الصّبرِ أن يُلفى مقيماً على الصّبر',  '‏ صَبْراً جميلاً على مانابَ من حَدَثٍ والصبرُ ينفعُ أحياناً إِذا صبروا الصّبرُ أفضلُ شيءٍ تستعينُ به على الزّمانِ إِذا ما مسَّكَ الضّررُ',]
 client.on('message', message => {
-if (message.content.startsWith('شعر')) {
+if (message.content.startsWith('!>شعر')) {
   if(!message.channel.guild) return message.reply('** This command only for servers **');
 var client= new Discord.RichEmbed()
 .setTitle("شعر..")
@@ -2044,38 +2048,6 @@ client.on('message', message => {
     return `${days > 0 ? `${days}:` : ''}${(hours || days) > 0 ? `${hours}:` : ''}${minutes}:${seconds}`
 };
 
-const res = JSON.parse(fs.readFileSync('./responses.json' , 'utf8'));
-client.on('message', async message => {
-    let messageArray = message.content.split(" ");
-   if(message.content.startsWith(prefix + "setMsg")) {
-    if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send('You don\'t have permission').then(msg => {
-       msg.delete(4500);
-       message.delete(4500);
-    });
-    
-    if(!messageArray[1]) return message.channel.send(':x: Supply a message!').then(msg => {
-       msg.delete(4500);
-       message.delete(4500);
-    });
-    if(!messageArray[2]) return message.channel.send(':x: Suplly a response!').then(msg => {
-       msg.delete(4500);
-       message.delete(4500);
-    });
-    message.reply('Preparing...').then(msg => {
-        setTimeout(() => {
-           msg.edit(':white_check_mark: Done!.'); 
-        },5000);
-    });
-    res[message.guild.id] = {
-        msg: messageArray[1],
-        response: messageArray[2],
-    };
-    fs.writeFile("./responses.json", JSON.stringify(res), (err) => {
-    if (err) console.error(err);
-  });
-   } 
-});
-
 client.on('message', async message => {
    if(message.content === res[message.guild.id].msg) {
        message.channel.send(res[message.guild.id].response);
@@ -2084,7 +2056,7 @@ client.on('message', async message => {
 
 //admins
 client.on('message', (message) => {
-    if (message.content.startsWith('.kick')) {
+    if (message.content.startsWith('!>kick')) {
       if(!message.member.hasPermission('KICK_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.kick().then((member) => {
@@ -2097,7 +2069,7 @@ client.on('message', (message) => {
 
 
 client.on('message', (message) => {
-    if (message.content.startsWith('.ban ')) {
+    if (message.content.startsWith('!>ban ')) {
       if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.ban().then((member) => {
@@ -2109,7 +2081,7 @@ client.on('message', (message) => {
 });
   
   client.on("message", (message) => {
-    if (message.content.startsWith('.delet')) {
+    if (message.content.startsWith('!>delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
@@ -2120,7 +2092,7 @@ client.on('message', (message) => {
 });
 
 client.on("message", (message) => {
-if (message.content.startsWith(".ct")) {
+if (message.content.startsWith("!>ct")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'text');
@@ -2129,7 +2101,7 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 }
 });
 client.on("message", (message) => {
-if (message.content.startsWith(".cv")) {
+if (message.content.startsWith("!>cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
