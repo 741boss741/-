@@ -1264,6 +1264,17 @@ message.channel.sendEmbed(dabs);
     }
 });
 
+//a77
+var a77 = ["https://media.discordapp.net/attachments/449738013711532032/463455415469080577/Screenshot_7.png"]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+    if(message.content.startsWith(prefix + 'ءف ءح')) {
+         var a77s = new Discord.RichEmbed()
+.setImage(a77[Math.floor(Math.random() * a77.length)])
+message.channel.sendEmbed(a77s);
+    }
+});
+
 //bl7a
 var bl7a = ["https://i.imgur.com/HLW70zm.jpg","https://i.ytimg.com/vi/Fj62InSHWFw/hqdefault.jpg","https://3.bp.blogspot.com/-_LXW7-zuWAg/WCituMasayI/AAAAAAADfkU/9YmMWayrvh4wQ2vxZXNuYaWxrEwUCMC8wCLcB/s640/%25D8%25A7%25D9%2584%25D8%25B3%25D9%258A%25D8%25B3%25D9%258A-%25D9%2588-%25D8%25A7%25D9%2584%25D9%2585%25D8%25AC%25D9%2584%25D8%25B3.jpg","https://pbs.twimg.com/profile_images/774920855822430208/dD4LHuD2_400x400.jpg","https://i.imgur.com/54oYVGt.jpg","https://akphoto1.ask.fm/a47/0e9b6/d519/485f/b84d/a7e3b9f02b07/original/2324041.jpg","https://i.imgur.com/kiPFu6v.jpg","https://khaberni-6zrocpuaymq7.stackpathdns.com/uploads/news_model/2018/03/main_image5ab00ac7aef5c.jpg","https://data.whicdn.com/images/234678438/large.jpg","http://www.thecarpenterbuilding.com/wp-content/uploads/2016/05/coming-soon.jpg"]
     client.on('message', message => {
