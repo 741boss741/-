@@ -480,7 +480,7 @@ message.channel.send('**تم الارسال في الخاص**');
 //welc
 client.on("guildMemberAdd", member => {
       const welcomer = client.channels.get("447512988954394624");
-      //*let welcomer = member.guild.channels.find("name","welcome");
+      let welcomer = member.guild.channels.find("name","welcome");
       if(!welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
