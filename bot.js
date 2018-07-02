@@ -78,85 +78,50 @@ __~~PowerX Bot~~__ By: XDROWN#5950
 ╔[❖════════════❖]╗
              Prefix = ' !> '
 ╚[❖════════════❖]╝
-
 ╔[❖════════════❖]╗
              Admin Commands
 ╚[❖════════════❖]╝
-
  ❖ !>kick <mention > ➾ kick member from server
-
  ❖ !>clear <amount> ➾ clear chat
  
  ❖ !>mute < mention > ➾ mute member
-
  ❖ !>unmute <mention> ➾ unmute member
-
  ❖ !>ct <name> ➾ create channel
-
  ❖ !>cv <name> create voice channel
   
  ❖ !>bc <message> ➾ message all members in server
-
-
 ╔[❖════════════❖]╗
           General  Commands
 ╚[❖════════════❖]╝
-
 ❖ !>help-ar ➾ help by arabic
-
 ❖ !>help-en ➾ help by english
-
 ❖ !>roll <number> ➾ role 
-
 ❖ !>profile ➾ see your profile
-
 ❖ !>daily ➾ for daily Money
-
 ❖ !>title <text> ➾ for change your profile title
-
 ❖ !>trans ➾ for convert your money to anyone
-
 ❖ !>credit ➾ to see your credit [money]
-
 ❖ !>member ➾ members info
-
 ❖ !>ser-av ➾ server avatar
-
 ❖ !>infobot ➾ to see bot uptime
-
 ❖ !>own ➾ bot owner
-
 ❖ !>id ➾ your id (SooN)
-
 ❖ !>avatar ➾ your avatar account
-
 ❖ !>ping ➾ to see ping
-
 ❖ !>bot ➾ bot informations 
-
 ❖ !>server ➾ server informations 
-
 ❖ !>invite ➾ bot invite link
-
 ❖ !>invites ➾ To Know The Number of Invitations
-
 ❖ !>colors ➾ To choose the colors you want
-
 ❖ !>ccolors ➾ Making colors for bot [Mission to work bot]
-
 ❖ !>rcolors ➾ To remove the colors of the bot
-
 ❖ !>support ➾ To help with bot orders
-
 ❖ !>Help-en-2 ➾ To Continue Help Menu
-
 ╔[❖════════════❖]╗
                     Welcome
 ╚[❖════════════❖]╝
-
 to enable welcome message do channel name "welcome"
 **
-
 `);
 
     }
@@ -178,70 +143,40 @@ client.on('message', message => {
 ╔[❖════════════❖]╗
            Games Commands
 ╚[❖════════════❖]╝
-
 ❖ !>bl7a ➾ View photos of Balaha
-
 ❖ !>meme ➾ View ridiculous images
-
 ❖ !>انمي ➾ View Anime Pictures
-
 ❖ !>خواطر ➾ Show some ideas 
-
 ❖ !>لو خيروك ➾ Show some violent challenges
-
 ❖ !>شعر ➾ Show some of the Poetry 
-
 ❖ !>كت تويت ➾ To display some things that might have happened with you 
-
 ❖ !>مريم ➾ Awesome game
-
 ❖ !>اذكار ➾ View some daily Azkar
-
 ❖ !>حكم ➾ View some judgment
-
 ❖ !>عقاب ➾ Some challenging challenges 
-
 ❖ Some games will be added soon
-
 ╔[❖════════════❖]╗
               The Holy Quran
 ╚[❖════════════❖]╝
-
 ❖ !>قران ➾ Opens the menu for selecting the reader 
-
 ❖ Close to more orders for the Holy Quran
-
-
 ╔[❖════════════❖]╗
        Soundborad Commands
 ╚[❖════════════❖]╝
-
 ❖ !>sb ➾ to open soundboard menu
-
 ❖ Close to more of the soundboard commands for introspection
-
 ╔[❖════════════❖]╗
              Music Commands
 ╚[❖════════════❖]╝
-
 ❖ !>play <name of song> ➾ To play or select the song you want
-
 ❖ !>queue ➾ Opens the music menu that works
-
 ❖ !>skip ➾ To skip the current music
-
 ❖ !>np ➾ To find out the current music name
-
 ❖ !>pause ➾ To stop the song temporarily
-
 ❖ !>resume ➾ To resume music
-
 ❖ !>vol <amount> ➾ To control the sound
-
 ==================================================================
-
 Server support: https://discord.gg/cJ9YJF6
-
 ==================================================================
 **
 `);
@@ -272,93 +207,54 @@ __~~PowerX Bot~~__ By: XDROWN#5950
 ╔[❖════════════❖]╗
                   Prefix = ' !> '
 ╚[❖════════════❖]╝
-
 ╔[❖════════════❖]╗
                     اوامر ادارية
 ╚[❖════════════❖]╝
-
  ❖ !>kick <mention > ➾ لطرد عضو
  
  ❖ !>mute < mention > ➾ اسكات عضو 
-
  ❖ !>clear  ➾ لتنضيف المحادثة (fixing)
-
  ❖ !>cv <name> ➾ صنع روم صوتية
-
  ❖ !>ct <name> ➾ صنع روم كتابية
-
  ❖ !>unmute <mention> ➾ فك الاسكات من العضو
   
  ❖ !>bc <message> ➾ لارسال رسالة لجميع اعضاء السيرفر
-
 ╔[❖════════════❖]╗
                     اوامر عامة
 ╚[❖════════════❖]╝
-
 ❖ !>help-ar ➾ المساعدة في العربي
-
 ❖ !>help-en ➾ المساعدة في الانجليزيلة
-
 ❖ !>ping ➾ عرض سرعه اتصال البوت
-
 ❖ !>bot ➾ معلومات البوت
-
 ❖ !>server ➾ معلومات السيرفر
-
 ❖ !>invite ➾ رابط دعوة البوت
-
 ❖ !>help-ar ➾ للمساعدة بالغة العربية
-
 ❖ !>help-en ➾ للمساعدة بالغة الأنجليزيه
-
 ❖ !>roll <number> ➾ قرعه 
-
 ❖ !>profile ➾ لكي تري الملف الشخصي الخاص بك
-
 ❖ !>daily ➾ لأموال اليومية
-
 ❖ !>title <text> ➾ لتغير الوصف الخاص بك في الملف الشخصي
-
 ❖ !>trans ➾ لتحول المال الخاص بك الي اي شخص
-
 ❖ !>credit ➾ لكي تري اموالك او الكريديت الخاصه بك
-
 ❖ !>member ➾ معلومات الأعضاء
-
 ❖ !>ser-av ➾ الصورة الرمزية للبوت
-
 ❖ !>infobot ➾ لرؤية حالة البوت
-
 ❖ !>own ➾ مبرمج البوت
-
 ❖ !>id ➾ هويتك (SooN)
-
 ❖ !>avatar ➾ الأفاتار الخاص بك
-
 ❖ !>ping ➾ لتري البينج الخاص بك
-
 ❖ !>bot ➾ معلومات عن البوت
-
 ❖ !>server ➾ معلومات عن السرفر 
-
 ❖ !>invite ➾ لكي تحصل علي رابط دعوة البوت
-
 ❖ !>invites ➾ لتعرف الدعوات الخاصه بالأشخاص
-
 ❖ !>colors ➾ لأختيار الألوان التي تريدها
-
 ❖ !>ccolors ➾ لصناعة الألوان الخاصة بالبوت [مهمة لكي يعمل البوت]
-
 ❖ !>rcolors ➾ لأزالة الألوان الخاصه بالبوت
-
 ❖ !>support ➾ للمساعدة في اوامر البوت
-
 ❖ !>Help-ar-2 ➾ لأكمال اوامر المساعدة
-
 ╔[❖════════════❖]╗
                       الترحيب
 ╚[❖════════════❖]╝
-
 لتفعيل خاصية الترحيب قم بعمل قناة اسمها "welcome"
 **
 `);
@@ -382,72 +278,42 @@ client.on('message', message => {
 ╔[❖════════════❖]╗
                    اوامر الألعاب
 ╚[❖════════════❖]╝
-
 ❖ !>bl7a ➾ لعرض صور بلحه
-
 ❖ !>meme ➾ لعرض صور المتخلفه
-
 ❖ !>لعرض صور انمي ➾ انمي
-
 ❖ !>لعرض بعض الأفكار ➾ خواطر
-
 ❖ !>لعرض بعض التحديات العنيفه ➾ لو خيروك
-
 ❖ !>لعرض بعض الأشعار ➾ شعر
-
 ❖ !>لعرض بعض الأشياء قد تكون حدثت معك ➾ كت تويت
-
 ❖ !>لعبة مرعبة ➾ مريم
-
 ❖ !>لعرض بعض الأذكار اليومية ➾ اذكار
-
 ❖ !>لعرض بعض الحكم ➾ حكم
-
 ❖ !>لخود بعض التحديات الصعبة ➾ عقاب
-
 سيتم اضافة بعض الألعاب قريبآ
-
 ╔[❖════════════❖]╗
                    القرأن الكريم
 ╚[❖════════════❖]╝
-
 ❖ !>لفتح القائمة الخاص بأختيار القارئ ➾ قران
-
 ❖ قريبآ المزيد من اوامر للقرأن الكريم
   
-
 ╔[❖════════════❖]╗
                اوامر الساوند بورد
 ╚[❖════════════❖]╝
-
 ❖ !>sb ➾ لفتح قائمة الساوند بورد
-
 ❖ قريبآ المزيد من اوامر الساوند بورد الخاصه بالتفحييط
-
 ╔[❖════════════❖]╗
                  اوامر الموسيقي
 ╚[❖════════════❖]╝
-
 ❖ !>play <name of song> ➾ لتشغيل او تحديد الأغنية التي تريدها
-
 ❖ !>queue ➾ لفتح قائمة الموسيقي التي تعمل
-
 ❖ !>skip ➾ لتخطي الموسيقي الحالية
-
 ❖ !>np ➾ لمعرفة اسم الموسيقي الحالية
-
 ❖ !>np ➾ لمعرفة اسم الأغنية الحالية
-
 ❖ !>pause ➾ لأيقاف الأغنية مؤقتآ
-
 ❖ !>resume ➾ لأستئناف الموسيقي
-
 ❖ !>vol <amount> ➾ للتحكم في الصوت
-
 ==================================================================
-
 Server support: https://discord.gg/cJ9YJF6
-
 ==================================================================
 **
 `);
@@ -470,11 +336,8 @@ client.on('message', message => {
  ┃╭━━┫╭╮┃╰╯╰╯┃┃━┫╭╯╱╭╯╰╮╱┃╭━╮┃╭╮┃┃
  ┃┃╱╱┃╰╯┣╮╭╮╭┫┃━┫┃╱╭╯╭╮╰╮┃╰━╯┃╰╯┃╰╮
  ╰╯╱╱╰━━╯╰╯╰╯╰━━┻╯╱╰━╯╰━╯╰━━━┻━━┻━╯
-
  __Powered By__: XDROWN#5950
-
  Server support: https://discord.gg/cJ9YJF6
-
  bot invite link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958588585
 `);
 
@@ -913,7 +776,6 @@ client.on('message', message => {
 
 
  message.author.sendMessage(`
-
  ╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╭━╮╭━╮╭━━╮╱╱╱╭╮
  ┃╭━╮┃╱╱╱╱╱╱╱╱╱╱╱╱╱╰╮╰╯╭╯┃╭╮┃╱╱╭╯╰╮
  ┃╰━╯┣━━┳╮╭╮╭┳━━┳━╮╱╰╮╭╯╱┃╰╯╰┳━┻╮╭╯
@@ -922,9 +784,7 @@ client.on('message', message => {
  ╰╯╱╱╰━━╯╰╯╰╯╰━━┻╯╱╰━╯╰━╯╰━━━┻━━┻━╯
  
 بامكانك دعوة البوت من هنا
-
 bot invite link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958588585
-
 Server support: https://discord.gg/cJ9YJF6
 `);
 
