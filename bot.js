@@ -451,6 +451,79 @@ Server support: https://discord.gg/cJ9YJF6
     }
 });
 
+//kickvoice
+client.on('message', eyad => {
+  if (eyad.content.startsWith('!>uvb')) {
+if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
+ let men = eyad.mentions.users.first()
+ let mas = eyad.author
+ if(!men) return eyad.channel.send('`منشن شخص `');
+ eyad.guild.channels.forEach(c => {
+ c.overwritePermissions(men.id, {
+         CONNECT: true
+ })
+    })
+const embed = new Discord.RichEmbed()
+.setColor("RANDOM")
+.setDescription(`**
+ <@${men.id}>
+
+ الان يمكنك الدخول الي الرومات الصوتيه:)
+
+بواسطة : <@${eyad.author.id}> **`)
+.setThumbnail("http://shopforclipart.com/images/green-tick/22.jpg")
+          
+client.users.get(men.id).sendEmbed(embed)
+const Embed11 = new Discord.RichEmbed()
+.setColor("RANDOM")
+.setAuthor(eyad.guild.name, eyad.guild.iconURL)
+.setDescription(`          <@${men.id}>
+
+الان يمكنك الدخول الي الرومات الصوتيه
+
+بواسطة : <@${eyad.author.id}>
+`)
+.setThumbnail("http://shopforclipart.com/images/green-tick/22.jpg")
+eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(15000)})
+    }
+}) // نهايه كود فك الباند الفويس
+ 
+client.on('message', eyad => {
+  if (eyad.content.startsWith('!>vb')) {
+if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
+let men = eyad.mentions.users.first()
+let mas = eyad.author
+if(!men) return eyad.channel.send('`منشن شخص `');
+eyad.guild.channels.forEach(c => {
+c.overwritePermissions(men.id, {
+          CONNECT: false
+})
+    })
+const embed = new Discord.RichEmbed()
+.setColor("RANDOM")
+.setDescription(`**
+ <@${men.id}>
+
+لقد تم منع من دخول الرومات الصوتيه 
+
+بواسطة : <@${eyad.author.id}> **`)
+.setThumbnail("http://www.clker.com/cliparts/o/Y/d/G/j/1/close-hi.png")
+          
+client.users.get(men.id).sendEmbed(embed)
+const Embed11 = new Discord.RichEmbed()
+.setColor("RANDOM")
+.setAuthor(eyad.guild.name, eyad.guild.iconURL)
+.setDescription(`          <@${men.id}>
+
+لقد تم منع من دخول الرومات الصوتيه
+
+بواسطة : <@${eyad.author.id}> `)
+.setThumbnail("http://www.clker.com/cliparts/o/Y/d/G/j/1/close-hi.png")
+eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(10000)})
+    }
+})// نهايه كود الباند الفويس
+
+
 //mc
 client.on("message", message => {
     if (!message.content.startsWith(prefix)) return;
