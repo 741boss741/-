@@ -600,12 +600,12 @@ client.on("guildMemberAdd", member => {
                                                          ctx.fillText(member.user.username, 200, 190);
                               
                               //NAMEً
-                              ctx.font = '20px Arial';
+                              ctx.font = '19px Arial';
                               ctx.fontSize = '18px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
       ctx.fillText(`Welcome To My World !!`
-                              , 200, 154);
+                              , 200, 155);
     welcomer.sendFile(canvas.toBuffer())
       
       
