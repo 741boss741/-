@@ -97,6 +97,15 @@ __~~PowerX Bot~~__ By: XDROWN#5950
 
 ❖ !>bc <message> ➾ message all members in server
 
+❖ !>uvb ➾ لفك بان الفويس
+
+❖ !>vc ➾ لأعطاء شخص بان فويس
+
+❖ !>cchat ➾ لأيقاف الشات في روم معينه
+
+❖ !>uchat ➾ لفتح الشات
+
+
 ╔[❖════════════❖]╗
           General  Commands
 ╚[❖════════════❖]╝
