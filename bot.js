@@ -1761,7 +1761,7 @@ client.on('message', message => {
             if (!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send(`**${message.author.username} You Dont Have** ``MANAGE_ROLES`` **Premission**`);
 
                      message.guild.createRole({ name: "Black", color: "#080808", permissions: [] })
-                     message.guild.createRole({ name: "DRed", color: "#B40404", permissions: [] })
+                     message.guild.createRole({ name: "D-Red", color: "#B40404", permissions: [] })
                      message.guild.createRole({ name: "Yellow", color: "#FFFF00", permissions: [] })
                      message.guild.createRole({ name: "D-Green", color: "#088A08", permissions: [] })
                      message.guild.createRole({ name: "Aqua", color: "#00BFFF", permissions: [] })
@@ -1794,7 +1794,7 @@ message.channel.sendMessage('**:white_check_mark: الرجاء الانتظار 
 			let args = message.content.split(' ').slice(1);
     if(message.content.startsWith(prefix + 'rmcolors')) {
 		if(!message.member.hasPermission('ADMINISTRATOR')) return
-		let role = message.guild.roles.find('name', 'DRed');
+		let role = message.guild.roles.find('name', 'D-Red');
 		
 		role.delete()
 		}
@@ -1959,15 +1959,14 @@ message.channel.sendEmbed(embed).then();
 
 
 //لون اسود
-
-
- let y1Filter = (reaction, user) => reaction.emoji.name === '❤️' && user.id === message.author.id;
+		
+let drFilter = (reaction, user) => reaction.emoji.name === '❤️' && user.id === message.author.id;
      
-       let y1 = msg.createReactionCollector(y1Filter, { time: 15000 });
+       let dr = msg.createReactionCollector(drFilter, { time: 15000 });
       
-                                    //t                    
-                               y1.on("collect", r => {
-                                   message.member.addRole(message.guild.roles.find("name", "DRed"))
+                                                    
+                               dr.on("collect", r => {
+                                   message.member.addRole(message.guild.roles.find("name", "D-Red"))
                                    
                                    
                             
@@ -1976,14 +1975,11 @@ message.channel.sendEmbed(embed).then();
      const embed = new Discord.RichEmbed() 
       .setColor("#FF0000")
 
-      .setDescription("**:art:تم اعطائك اللون الأحمر الغامق**")
+      .setDescription("**:art:تم اعطائك اللون الاحمر الغامق**")
       .setFooter(message.author.tag , message.author.avatarURL)
 
 message.channel.sendEmbed(embed).then();
-
-
-
-   })
+ })
 
  //لون احمر 
 let y2Filter = (reaction, user) => reaction.emoji.name === '💛' && user.id === message.author.id;
