@@ -152,7 +152,7 @@ __~~PowerX Bot~~__ By: XDROWN#5950
 
 ❖ !>ccolors ➾ Making colors for bot [Mission to work bot]
 
-❖ !>rcolors ➾ To remove the colors of the bot
+❖ !>rmcolors ➾ To remove the colors of the bot
 
 ❖ !>support ➾ To help with bot orders
 
@@ -355,7 +355,7 @@ __~~PowerX Bot~~__ By: XDROWN#5950
 
 ❖ !>ccolors ➾ لصناعة الألوان الخاصة بالبوت [مهمة لكي يعمل البوت]
 
-❖ !>rcolors ➾ لأزالة الألوان الخاصه بالبوت
+❖ !>rmcolors ➾ لأزالة الألوان الخاصه بالبوت
 
 ❖ !>support ➾ للمساعدة في اوامر البوت
 
@@ -1754,9 +1754,9 @@ Channels📚 ${client.channels.size} `)
  
 });
 
-//ctcolors
+//ccolors
 client.on('message', message => {
-    if(message.content.startsWith(prefix + 'ctcolors')) {
+    if(message.content.startsWith(prefix + 'ccolors')) {
     if(!message.channel.guild) return message.channel.send('**This Command Only For Servers !**')
             if (!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send(`**${message.author.username} You Dont Have** ``MANAGE_ROLES`` **Premission**`);
 
