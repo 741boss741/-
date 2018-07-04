@@ -1960,7 +1960,7 @@ message.channel.sendEmbed(embed).then();
 
 //لون اسود
 		
-let drFilter = (reaction, user) => reaction.emoji.name === '❤️' && user.id === message.author.id;
+let drFilter = (reaction, user) => reaction.emoji.name === '❤' && user.id === message.author.id;
      
        let dr = msg.createReactionCollector(drFilter, { time: 15000 });
       
@@ -1973,7 +1973,7 @@ let drFilter = (reaction, user) => reaction.emoji.name === '❤️' && user.id =
                                  
 
      const embed = new Discord.RichEmbed() 
-      .setColor("#FF0000")
+      .setColor("#000000")
 
       .setDescription("**:art:تم اعطائك اللون الاحمر الغامق**")
       .setFooter(message.author.tag , message.author.avatarURL)
