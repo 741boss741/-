@@ -1012,7 +1012,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' لي
          SEND_MESSAGES: false
 
            }).then(() => {
-               message.reply("تم تقفيل الشات :white_check_mark: ")
+               message.reply("تم قفل الشات :white_check_mark: ")
            });
              }
 
