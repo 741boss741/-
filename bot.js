@@ -2191,7 +2191,7 @@ let y6Filter = (reaction, user) => reaction.emoji.name === '❌' && user.id === 
                                                     
                                y6.on("collect", r => {
                                    message.member.removeRole(message.guild.roles.find("name", "black"))
-                                   message.member.removeRole(message.guild.roles.find("name", "DRed")) 
+                                   message.member.removeRole(message.guild.roles.find("name", "D-Red")) 
                                    message.member.removeRole(message.guild.roles.find("name", "Yellow"))
                                    message.member.removeRole(message.guild.roles.find("name", "D-Green"))
                                    message.member.removeRole(message.guild.roles.find("name", "Aqua"))
