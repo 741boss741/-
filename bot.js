@@ -1761,7 +1761,7 @@ client.on('message', message => {
             if (!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send(`**${message.author.username} You Dont Have** ``MANAGE_ROLES`` **Premission**`);
 
                      message.guild.createRole({ name: "Black", color: "#080808", permissions: [] })
-                     message.guild.createRole({ name: "D-Red", color: "#B40404", permissions: [] })
+                     message.guild.createRole({ name: "DRed", color: "#B40404", permissions: [] })
                      message.guild.createRole({ name: "Yellow", color: "#FFFF00", permissions: [] })
                      message.guild.createRole({ name: "D-Green", color: "#088A08", permissions: [] })
                      message.guild.createRole({ name: "Aqua", color: "#00BFFF", permissions: [] })
@@ -1794,7 +1794,7 @@ message.channel.sendMessage('**:white_check_mark: الرجاء الانتظار 
 			let args = message.content.split(' ').slice(1);
     if(message.content.startsWith(prefix + 'rmcolors')) {
 		if(!message.member.hasPermission('ADMINISTRATOR')) return
-		let role = message.guild.roles.find('name', 'D-Red');
+		let role = message.guild.roles.find('name', 'DRed');
 		
 		role.delete()
 		}
@@ -1967,7 +1967,7 @@ message.channel.sendEmbed(embed).then();
       
                                     //t                    
                                y1.on("collect", r => {
-                                   message.member.addRole(message.guild.roles.find("name", "D-Red"))
+                                   message.member.addRole(message.guild.roles.find("name", "DRed"))
                                    
                                    
                             
@@ -2195,7 +2195,7 @@ let y6Filter = (reaction, user) => reaction.emoji.name === '❌' && user.id === 
                                                     
                                y6.on("collect", r => {
                                    message.member.removeRole(message.guild.roles.find("name", "black"))
-                                   message.member.removeRole(message.guild.roles.find("name", "D-Red")) 
+                                   message.member.removeRole(message.guild.roles.find("name", "DRed")) 
                                    message.member.removeRole(message.guild.roles.find("name", "Yellow"))
                                    message.member.removeRole(message.guild.roles.find("name", "D-Green"))
                                    message.member.removeRole(message.guild.roles.find("name", "Aqua"))
