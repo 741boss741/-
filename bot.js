@@ -476,7 +476,7 @@ Server support: https://discord.gg/cJ9YJF6
         console.log(`Restarting..`);
         setTimeout(() => {
             client.destroy();
-            client.login('NDYxOTk2MDMxNjY4NzgxMDY4.Dhbggg.YX8vW__u_wJMiUMRaCVetK70E3o');
+            client.login('NDU5NDc2NjQ4MDkwMTQwNjcy.DhsxBg.sinkP3tyZTQzNhs7LT5X3Lvwvzg');
         },3000);
     }
 });
