@@ -2582,4 +2582,4 @@ client.on("roleCreate", rc => {
   }
 });
 
-client.login("NDY0MzU3Nzg0MjQ3NTk5MTA0.Dh9_Lw.9NQVr2AjnxA0lz2qYQVI-8UXZNU");
+client.login("NDY0MzU3Nzg0MjQ3NTk5MTA0.Dh-B0w.SB0y8Fpkel1T3fTWeRgX7elbm5c");
