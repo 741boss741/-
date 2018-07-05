@@ -2582,4 +2582,4 @@ client.on("roleCreate", rc => {
   }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_T0KEN);
