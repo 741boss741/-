@@ -481,6 +481,38 @@ Server support: https://discord.gg/qYnkqqT
     }
 });
 
+//welcome inv
+client.on('message', message =>{
+  let args = message.content.split(' ');
+if(args[0] === `${prefix}emoji`){
+let findEmoji = args[1];
+
+if(!findEmoji || findEmoji === '') return  message.reply(`**أدخل الايموجي**`);
+
+let EmojiId = findEmoji.slice(findEmoji.length - 19,findEmoji.length -1);
+
+if(isNaN(EmojiId)) return message.reply(`**لم استطع العثور على الايموجي المطلوب**`);
+
+let EmojiURL = `https://cdn.discordapp.com/emojis/${EmojiId}.png`;
+
+let EmojiEmbed = new Discord.RichEmbed()
+.setColor('RANDOM')
+.setTitle(`Link Emoji ${findEmoji}`)
+.setURL(`${EmojiURL}`)
+.setImage(`${EmojiURL}`)
+
+message.channel.send({ embed  : EmojiEmbed });
+
+};
+});
+
+//serv
+ client.on('guildCreate', guild => {
+  client.channels.get("464534068562755604").send(`**تم اضافة البوت في سيرفر جديد عاااش يكبيير :smile:
+اسم السيرفر: __${guild.name}__
+اونر السيرفر: __${guild.owner}__**`)
+}); 
+
 //kickvoice
 client.on('message', eyad => {
   if (eyad.content.startsWith('!>uvb')) {
