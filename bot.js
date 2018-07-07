@@ -5,11 +5,11 @@ const Canvas = require("canvas");
 const jimp = require("jimp");
 const moment = require('moment');
 const yt = require('ytdl-core');
-const prefix = '!>'
+const prefix = '>'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame("For Help type - !>help - Enjoy!");
+client.user.setGame("For Help type - >help - Enjoy!");
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -38,7 +38,7 @@ client.on("message", message => {
              
      if(!message.channel.guild) return;
 
- if (message.content === "!>help") {
+ if (message.content === ">help") {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
@@ -46,9 +46,9 @@ client.on("message", message => {
       
       .addField("XDROWN#5950 : Dev", true)
       
-      .addField("❖ !>help-ar ➾ help by arabic", true)
+      .addField("❖ >help-ar ➾ help by arabic", true)
 
-        .addField("❖ !>help-en ➾ help by english", true)
+        .addField("❖ >help-en ➾ help by english", true)
       
   message.channel.sendMessage({embed});
 
@@ -76,93 +76,102 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 ╭╯╭╮╰┫┃╱╱┃╰━╯┃╭━╮┃┃╱┃┃┃╰━━╮╱┃┃
 ╰━╯╰━┻╯╱╱╰━━━┻╯╱╰┻╯╱╰━┻━━━╯╱╰╯
 ╔[❖════════════❖]╗
-             Prefix = ' !> '
+             Prefix = ' > '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
              Admin Commands
 ╚[❖════════════❖]╝
 
-❖ !>kick <mention > ➾ kick member from server
+❖ >kick <mention > ➾ kick member from server
 
-❖ !>clear <amount> ➾ clear chat
+❖ >clear <amount> ➾ clear chat
  
-❖ !>mute < mention > ➾ mute member
+❖ >mute < mention > ➾ mute member
 
-❖ !>unmute <mention> ➾ unmute member
+❖ >unmute <mention> ➾ unmute member
 
-❖ !>ct <name> ➾ create channel
+❖ >cchat ➾ to lock the chat
 
-❖ !>cv <name> create voice channel
+❖ >cchat ➾ to open the chat
 
-❖ !>bc <message> ➾ message all members in server
+❖ >ct <name> ➾ create channel
 
-❖ !>uvb ➾ لفك بان الفويس
+❖ >cv <name> create voice channel
 
-❖ !>vc ➾ لأعطاء شخص بان فويس
+❖ >bc <message> ➾ message all members in server
 
-❖ !>cchat ➾ لأيقاف الشات في روم معينه
+❖ >uvb ➾ لفك بان الفويس
 
-❖ !>uchat ➾ لفتح الشات
+❖ >vc ➾ لأعطاء شخص بان فويس
+
+❖ >cchat ➾ لأيقاف الشات في روم معينه
+
+❖ >uchat ➾ لفتح الشات
 
 
 ╔[❖════════════❖]╗
           General  Commands
 ╚[❖════════════❖]╝
 
-❖ !>help-ar ➾ help by arabic
+❖ >help-ar ➾ help by arabic
 
-❖ !>help-en ➾ help by english
+❖ >help-en ➾ help by english
 
-❖ !>roll <number> ➾ role 
+❖ >roll <number> ➾ role 
 
-❖ !>profile ➾ see your profile
+❖ >profile ➾ see your profile
 
-❖ !>daily ➾ for daily Money
+❖ >daily ➾ for daily Money
 
-❖ !>title <text> ➾ for change your profile title
+❖ >title <text> ➾ for change your profile title
 
-❖ !>trans ➾ for convert your money to anyone
+❖ >trans ➾ for convert your money to anyone
 
-❖ !>credit ➾ to see your credit [money]
+❖ >credit ➾ to see your credit [money]
 
-❖ !>member ➾ members info
+❖ >member ➾ members info
 
-❖ !>ser-av ➾ server avatar
+❖ >ser-av ➾ server avatar
 
-❖ !>infobot ➾ to see bot uptime
+❖ >infobot ➾ to see bot uptime
 
-❖ !>own ➾ bot owner
+❖ >own ➾ bot owner
 
-❖ !>id ➾ your id (SooN)
+❖ >id ➾ your id (SooN)
 
-❖ !>avatar ➾ your avatar account
+❖ >avatar ➾ your avatar account
 
-❖ !>ping ➾ to see ping
+❖ >ping ➾ to see ping
 
-❖ !>bot ➾ bot informations 
+❖ >bot ➾ bot informations 
 
-❖ !>server ➾ server informations 
+❖ >server ➾ server informations 
 
-❖ !>invite ➾ bot invite link
+❖ >invite ➾ bot invite link
 
-❖ !>invites ➾ To Know The Number of Invitations
+❖ >invites ➾ To Know The Number of Invitations
 
-❖ !>colors ➾ To choose the colors you want
+❖ >colors ➾ To choose the colors you want
 
-❖ !>ccolors ➾ Making colors for bot [Mission to work bot]
+❖ >ccolors ➾ Making colors for bot [Mission to work bot]
 
-❖ !>rmcolors ➾ To remove the colors of the bot
+❖ >rmcolors ➾ To remove the colors of the bot
 
-❖ !>support ➾ To help with bot orders
+❖ >Emoji ➾ To get your custom Emoji link
 
-❖ !>Help-en-2 ➾ To Continue Help Menu
+❖ >mcskin ➾ To Get your Minecraft skin
+
+❖ >support ➾ To help with bot orders
+
+❖ >Help-en-2 ➾ To Continue Help Menu
 
 ╔[❖════════════❖]╗
                   Welcome
 ╚[❖════════════❖]╝
 
 to enable welcome message do channel name "welcome"
+to enable log message do channel name "log"
 **
 `);
 
@@ -186,27 +195,27 @@ client.on('message', message => {
            Games Commands
 ╚[❖════════════❖]╝
 
-❖ !>bl7a ➾ View photos of Balaha
+❖ >bl7a ➾ View photos of Balaha
 
-❖ !>meme ➾ View ridiculous images
+❖ >meme ➾ View ridiculous images
 
-❖ !>انمي ➾ View Anime Pictures
+❖ >انمي ➾ View Anime Pictures
 
-❖ !>خواطر ➾ Show some ideas 
+❖ >خواطر ➾ Show some ideas 
 
-❖ !>لو خيروك ➾ Show some violent challenges
+❖ >لو خيروك ➾ Show some violent challenges
 
-❖ !>شعر ➾ Show some of the Poetry 
+❖ >شعر ➾ Show some of the Poetry 
 
-❖ !>كت تويت ➾ To display some things that might have happened with you 
+❖ >كت تويت ➾ To display some things that might have happened with you 
 
-❖ !>مريم ➾ Awesome game
+❖ >مريم ➾ Awesome game
 
-❖ !>اذكار ➾ View some daily Azkar
+❖ >اذكار ➾ View some daily Azkar
 
-❖ !>حكم ➾ View some judgment
+❖ >حكم ➾ View some judgment
 
-❖ !>عقاب ➾ Some challenging challenges 
+❖ >عقاب ➾ Some challenging challenges 
 
 ❖ Some games will be added soon
 
@@ -214,7 +223,7 @@ client.on('message', message => {
               The Holy Quran
 ╚[❖════════════❖]╝
 
-❖ !>قران ➾ Opens the menu for selecting the reader 
+❖ >قران ➾ Opens the menu for selecting the reader 
 
 ❖ Close to more orders for the Holy Quran
 
@@ -222,7 +231,7 @@ client.on('message', message => {
        Soundborad Commands
 ╚[❖════════════❖]╝
 
-❖ !>sb ➾ to open soundboard menu
+❖ >sb ➾ to open soundboard menu
 
 ❖ Close to more of the soundboard commands for introspection
 
@@ -230,19 +239,19 @@ client.on('message', message => {
              Music Commands
 ╚[❖════════════❖]╝
 
-❖ !>play <name of song> ➾ To play or select the song you want
+❖ >play <name of song> ➾ To play or select the song you want
 
-❖ !>queue ➾ Opens the music menu that works
+❖ >queue ➾ Opens the music menu that works
 
-❖ !>skip ➾ To skip the current music
+❖ >skip ➾ To skip the current music
 
-❖ !>np ➾ To find out the current music name
+❖ >np ➾ To find out the current music name
 
-❖ !>pause ➾ To stop the song temporarily
+❖ >pause ➾ To stop the song temporarily
 
-❖ !>resume ➾ To resume music
+❖ >resume ➾ To resume music
 
-❖ !>vol <amount> ➾ To control the sound
+❖ >vol <amount> ➾ To control the sound
 
 ==================================================================
 
@@ -276,96 +285,105 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 ╭╯╭╮╰┫┃╱╱┃╰━╯┃╭━╮┃┃╱┃┃┃╰━━╮╱┃┃
 ╰━╯╰━┻╯╱╱╰━━━┻╯╱╰┻╯╱╰━┻━━━╯╱╰╯
 ╔[❖════════════❖]╗
-                  Prefix = ' !> '
+                  Prefix = ' > '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
                     اوامر ادارية
 ╚[❖════════════❖]╝
 
-❖ !>kick <mention > ➾ لطرد عضو
+❖ >kick <mention > ➾ لطرد عضو
  
-❖ !>mute < mention > ➾ اسكات عضو 
+❖ >mute < mention > ➾ اسكات عضو 
 
-❖ !>clear  ➾ لتنضيف المحادثة (fixing)
+❖ >cchat ➾ لقفل الشات
+
+❖ >uchat ➾ لفتح الشات 
+
+❖ >clear  ➾ لتنضيف المحادثة
  
-❖ !>cv <name> ➾ صنع روم صوتية
+❖ >cv <name> ➾ صنع روم صوتية
 
-❖ !>ct <name> ➾ صنع روم كتابية
+❖ >ct <name> ➾ صنع روم كتابية
 
-❖ !>unmute <mention> ➾ فك الاسكات من العضو
+❖ >unmute <mention> ➾ فك الاسكات من العضو
 
-❖ !>bc <message> ➾ لارسال رسالة لجميع اعضاء السيرفر
+❖ >bc <message> ➾ لارسال رسالة لجميع اعضاء السيرفر
 
 ╔[❖════════════❖]╗
                     اوامر عامة
 ╚[❖════════════❖]╝
 
-❖ !>help-ar ➾ المساعدة في العربي
+❖ >help-ar ➾ المساعدة في العربي
 
-❖ !>help-en ➾ المساعدة في الانجليزيلة
+❖ >help-en ➾ المساعدة في الانجليزيلة
 
-❖ !>ping ➾ عرض سرعه اتصال البوت
+❖ >ping ➾ عرض سرعه اتصال البوت
 
-❖ !>bot ➾ معلومات البوت
+❖ >bot ➾ معلومات البوت
 
-❖ !>server ➾ معلومات السيرفر
+❖ >server ➾ معلومات السيرفر
 
-❖ !>invite ➾ رابط دعوة البوت
+❖ >invite ➾ رابط دعوة البوت
 
-❖ !>help-ar ➾ للمساعدة بالغة العربية
+❖ >help-ar ➾ للمساعدة بالغة العربية
 
-❖ !>help-en ➾ للمساعدة بالغة الأنجليزيه
+❖ >help-en ➾ للمساعدة بالغة الأنجليزيه
 
-❖ !>roll <number> ➾ قرعه 
+❖ >roll <number> ➾ قرعه 
 
-❖ !>profile ➾ لكي تري الملف الشخصي الخاص بك
+❖ >profile ➾ لكي تري الملف الشخصي الخاص بك
 
-❖ !>daily ➾ لأموال اليومية
+❖ >daily ➾ لأموال اليومية
 
-❖ !>title <text> ➾ لتغير الوصف الخاص بك في الملف الشخصي
+❖ >title <text> ➾ لتغير الوصف الخاص بك في الملف الشخصي
 
-❖ !>trans ➾ لتحول المال الخاص بك الي اي شخص
+❖ >trans ➾ لتحول المال الخاص بك الي اي شخص
 
-❖ !>credit ➾ لكي تري اموالك او الكريديت الخاصه بك
+❖ >credit ➾ لكي تري اموالك او الكريديت الخاصه بك
 
-❖ !>member ➾ معلومات الأعضاء
+❖ >member ➾ معلومات الأعضاء
 
-❖ !>ser-av ➾ الصورة الرمزية للبوت
+❖ >ser-av ➾ الصورة الرمزية للبوت
 
-❖ !>infobot ➾ لرؤية حالة البوت
+❖ >infobot ➾ لرؤية حالة البوت
 
-❖ !>own ➾ مبرمج البوت
+❖ >own ➾ مبرمج البوت
 
-❖ !>id ➾ هويتك (SooN)
+❖ >id ➾ هويتك (SooN)
 
-❖ !>avatar ➾ الأفاتار الخاص بك
+❖ >avatar ➾ الأفاتار الخاص بك
 
-❖ !>ping ➾ لتري البينج الخاص بك
+❖ >ping ➾ لتري البينج الخاص بك
 
-❖ !>bot ➾ معلومات عن البوت
+❖ >bot ➾ معلومات عن البوت
 
-❖ !>server ➾ معلومات عن السرفر 
+❖ >server ➾ معلومات عن السرفر 
 
-❖ !>invite ➾ لكي تحصل علي رابط دعوة البوت
+❖ >invite ➾ لكي تحصل علي رابط دعوة البوت
 
-❖ !>invites ➾ لتعرف الدعوات الخاصه بالأشخاص
+❖ >invites ➾ لتعرف الدعوات الخاصه بالأشخاص
 
-❖ !>colors ➾ لأختيار الألوان التي تريدها
+❖ >colors ➾ لأختيار الألوان التي تريدها
 
-❖ !>ccolors ➾ لصناعة الألوان الخاصة بالبوت [مهمة لكي يعمل البوت]
+❖ >ccolors ➾ لصناعة الألوان الخاصة بالبوت [مهمة لكي يعمل البوت]
 
-❖ !>rmcolors ➾ لأزالة الألوان الخاصه بالبوت
+❖ >rmcolors ➾ لأزالة الألوان الخاصه بالبوت
 
-❖ !>support ➾ للمساعدة في اوامر البوت
+❖ >support ➾ للمساعدة في اوامر البوت
 
-❖ !>help-ar-2 ➾ لأكمال اوامر المساعدة
+❖ >Emoji ➾ لتأخذ رابط الاموجي الخاصه بك
+
+❖ >mcskin ➾ لعرض السكن الخاص بك في ماين كرافت
+
+❖ >help-ar-2 ➾ لأكمال اوامر المساعدة
 
 ╔[❖════════════❖]╗
                       الترحيب
 ╚[❖════════════❖]╝
 
 لتفعيل خاصية الترحيب قم بعمل قناة اسمها "welcome"
+لتفعيل خاصية اللوج قم بعمل قناة اسمها "log"
 **
 `);
 
@@ -389,27 +407,27 @@ client.on('message', message => {
                    اوامر الألعاب
 ╚[❖════════════❖]╝
 
-❖ !>bl7a ➾ لعرض صور بلحه
+❖ >bl7a ➾ لعرض صور بلحه
 
-❖ !>meme ➾ لعرض صور المتخلفه
+❖ >meme ➾ لعرض صور المتخلفه
 
-❖ !>لعرض صور انمي ➾ انمي
+❖ >لعرض صور انمي ➾ انمي
 
-❖ !>لعرض بعض الأفكار ➾ خواطر
+❖ >لعرض بعض الأفكار ➾ خواطر
 
-❖ !>لعرض بعض التحديات العنيفه ➾ لو خيروك
+❖ >لعرض بعض التحديات العنيفه ➾ لو خيروك
 
-❖ !>لعرض بعض الأشعار ➾ شعر
+❖ >لعرض بعض الأشعار ➾ شعر
 
-❖ !>لعرض بعض الأشياء قد تكون حدثت معك ➾ كت تويت
+❖ >لعرض بعض الأشياء قد تكون حدثت معك ➾ كت تويت
 
-❖ !>لعبة مرعبة ➾ مريم
+❖ >لعبة مرعبة ➾ مريم
 
-❖ !>لعرض بعض الأذكار اليومية ➾ اذكار
+❖ >لعرض بعض الأذكار اليومية ➾ اذكار
 
-❖ !>لعرض بعض الحكم ➾ حكم
+❖ >لعرض بعض الحكم ➾ حكم
 
-❖ !>لخود بعض التحديات الصعبة ➾ عقاب
+❖ >لخود بعض التحديات الصعبة ➾ عقاب
 
 ❖ سيتم اضافة بعض الألعاب قريبآ
 
@@ -417,7 +435,7 @@ client.on('message', message => {
                    القرأن الكريم
 ╚[❖════════════❖]╝
 
-❖ !>لفتح القائمة الخاص بأختيار القارئ ➾ قران
+❖ >لفتح القائمة الخاص بأختيار القارئ ➾ قران
 
 ❖ قريبآ المزيد من اوامر للقرأن الكريم
 
@@ -425,7 +443,7 @@ client.on('message', message => {
                اوامر الساوند بورد
 ╚[❖════════════❖]╝
 
-❖ !>sb ➾ لفتح قائمة الساوند بورد
+❖ >sb ➾ لفتح قائمة الساوند بورد
 
 ❖ قريبآ المزيد من اوامر الساوند بورد الخاصه بالتفحييط
 
@@ -433,21 +451,21 @@ client.on('message', message => {
                  اوامر الموسيقي
 ╚[❖════════════❖]╝
 
-❖ !>play <name of song> ➾ لتشغيل او تحديد الأغنية التي تريدها
+❖ >play <name of song> ➾ لتشغيل او تحديد الأغنية التي تريدها
 
-❖ !>queue ➾ لفتح قائمة الموسيقي التي تعمل
+❖ >queue ➾ لفتح قائمة الموسيقي التي تعمل
 
-❖ !>skip ➾ لتخطي الموسيقي الحالية
+❖ >skip ➾ لتخطي الموسيقي الحالية
 
-❖ !>np ➾ لمعرفة اسم الموسيقي الحالية
+❖ >np ➾ لمعرفة اسم الموسيقي الحالية
 
-❖ !>np ➾ لمعرفة اسم الأغنية الحالية
+❖ >np ➾ لمعرفة اسم الأغنية الحالية
 
-❖ !>pause ➾ لأيقاف الأغنية مؤقتآ
+❖ >pause ➾ لأيقاف الأغنية مؤقتآ
 
-❖ !>resume ➾ لأستئناف الموسيقي
+❖ >resume ➾ لأستئناف الموسيقي
 
-❖ !>vol <amount> ➾ للتحكم في الصوت
+❖ >vol <amount> ➾ للتحكم في الصوت
 
 ==================================================================
 
@@ -515,7 +533,7 @@ message.channel.send({ embed  : EmojiEmbed });
 
 //kickvoice
 client.on('message', eyad => {
-  if (eyad.content.startsWith('!>uvb')) {
+  if (eyad.content.startsWith('>uvb')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
  let men = eyad.mentions.users.first()
  let mas = eyad.author
@@ -551,7 +569,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(15000)})
 }) // نهايه كود فك الباند الفويس
  
 client.on('message', eyad => {
-  if (eyad.content.startsWith('!>vb')) {
+  if (eyad.content.startsWith('>vb')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 let men = eyad.mentions.users.first()
 let mas = eyad.author
@@ -627,7 +645,7 @@ message.channel.send('**تم الارسال في الخاص**');
 });
 //servers
 client.on('message', message => {
-     if (message.content === "!>servers") {
+     if (message.content === ">servers") {
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField("**| السيرفرات |**" , client.guilds.size)
@@ -1036,7 +1054,7 @@ message.channel.stopTyping()
 //chat
 client.on('message', message => {
 
-    if (message.content === "!>cchat") {
+    if (message.content === ">cchat") {
                         if(!message.channel.guild) return message.reply(' This command only for servers');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' ليس لديك صلاحيات');
@@ -1048,7 +1066,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' لي
            });
              }
 
-if (message.content === "!>uchat") {
+if (message.content === ">uchat") {
     if(!message.channel.guild) return message.reply(' This command only for servers');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
@@ -1067,7 +1085,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 //ping
       client.on('message', message => {
                                 if(!message.channel.guild) return;
-                        if (message.content.startsWith('!>ping')) {
+                        if (message.content.startsWith('>ping')) {
                             if(!message.channel.guild) return;
                             var msg = `${Date.now() - message.createdTimestamp}`
                             var api = `${Math.round(client.ping)}`
@@ -1085,7 +1103,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 client.on("message", message => {    
           if(!message.channel.guild) return;
    if(message.author.bot) return;
-      if(message.content === "!>ser-av"){ 
+      if(message.content === ">ser-av"){ 
           const embed = new Discord.RichEmbed()
   
       .setTitle(`صورة ** ${message.guild.name} **`)
@@ -1124,7 +1142,7 @@ message.channel.send(':white_check_mark: **تم الارسال في الخاص**
 });
 //link
 client.on('message', message => {
-    if (message.content.startsWith("!>رابط")) {
+    if (message.content.startsWith(">رابط")) {
  
   message.channel.createInvite({
         thing: true,
@@ -1197,7 +1215,7 @@ client.on('message', function(message) {
 
 //avatar
 client.on('message', message => {
-    if (message.content.startsWith("!>avatar")) {
+    if (message.content.startsWith(">avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -1216,7 +1234,7 @@ client.on('message', message => {
 //members
     client.on('message', message => {
               if (!message.channel.guild) return;
-      if(message.content =='!>members')
+      if(message.content =='>members')
       var IzRo = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL) 
@@ -1451,7 +1469,7 @@ const secreT = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith("!>خواطر")) {
+   if (message.content.startsWith(">خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -1478,7 +1496,7 @@ message.channel.sendEmbed(cat);
 
 const Sra7a = [  ' يا صرخة إحساسي وخنقة دموعي إذا الصّدف جابت مكاني مكانه من داخلي إحساس يعلن خضوعي وفي ظاهري رجال حافظ كيانه',  ' ظامي الوجدان وأشواقك نهر اسقني من عذب معسول الغدير الرّموش السّود والطّرف الحور ليتها عن لحظها لي تستخير أول المشوار في حبّك قهر وآخر المشوار عمري به خطير',  ' حبيبي عادت أسراب الحمام وعادوا الغيّاب وأنا من كثر ما شفت الوجيه اشتقت لأحبابي حبيبي من كثر ما اشتقت لك صرت أكره الأبواب ليّا شفت الوصل، وأهل الوصل ما عتّبوا بابي',  ' أي سرّ يعتري شوقي إليك إنّ شوقي حائر في مقلتيك كلّنا أسرى صبابات الهوى فادنُ منّي إنّني ملك يديك',  ' إِن الغرورَ إِذا تملَّكَ أمّةً كالزّهرِ يخفي الموتَ وهو زؤامُ',  ' إِذا عصفَ الغرورُ برأسِ غِرٍّ توّهمَ أن منكبَهُ جَناحُ',  ' أيّهذا الشّاكي و ما بك داء كن جميلاً ترى الوجود جميلا',  ' في هذه البقاع القصيّة هذه البقاع المهجورة حتى من عواء الذئب أسرجُ ضوء الشّمعة وأسافر',  ' يا نفسُ صَبْراً على ما قد مَنّيتِ به فالحرُّ يصبرُ عند الحادثِ الجَلَلِ',  ' وحسبُ الفتى إِن لمْ ينلْ ما يريدُه مع الصّبرِ أن يُلفى مقيماً على الصّبر',  '‏ صَبْراً جميلاً على مانابَ من حَدَثٍ والصبرُ ينفعُ أحياناً إِذا صبروا الصّبرُ أفضلُ شيءٍ تستعينُ به على الزّمانِ إِذا ما مسَّكَ الضّررُ',]
 client.on('message', message => {
-if (message.content.startsWith('!>شعر')) {
+if (message.content.startsWith('>شعر')) {
   if(!message.channel.guild) return message.reply('** This command only for servers **');
 var client= new Discord.RichEmbed()
 .setTitle("شعر..")
@@ -2298,7 +2316,7 @@ client.on('message', async message => {
 
 //admins
 client.on('message', (message) => {
-    if (message.content.startsWith('!>kick')) {
+    if (message.content.startsWith('>kick')) {
       if(!message.member.hasPermission('KICK_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.kick().then((member) => {
@@ -2311,7 +2329,7 @@ client.on('message', (message) => {
 
 
 client.on('message', (message) => {
-    if (message.content.startsWith('!>ban ')) {
+    if (message.content.startsWith('>ban ')) {
       if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.ban().then((member) => {
@@ -2323,7 +2341,7 @@ client.on('message', (message) => {
 });
   
   client.on("message", (message) => {
-    if (message.content.startsWith('!>delet')) {
+    if (message.content.startsWith('>delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
@@ -2334,7 +2352,7 @@ client.on('message', (message) => {
 });
 
 client.on("message", (message) => {
-if (message.content.startsWith("!>ct")) {
+if (message.content.startsWith(">ct")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'text');
@@ -2343,7 +2361,7 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 }
 });
 client.on("message", (message) => {
-if (message.content.startsWith("!>cv")) {
+if (message.content.startsWith(">cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
@@ -2354,7 +2372,7 @@ if (message.content.startsWith("!>cv")) {
 
 client.on('message', message => {
   if (true) {
-if (message.content === '!>support') {
+if (message.content === '>support') {
       message.author.send(' |https://discord.gg/dbzxbC7| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
@@ -2364,7 +2382,7 @@ if (message.content === '!>support') {
   
 
 client.on('message', message => {
-     if (message.content === "!>support") {
+     if (message.content === ">support") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
