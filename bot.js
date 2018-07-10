@@ -1294,9 +1294,9 @@ client.on('message', message => {
   if (message.author.bot) return;
     if(!message.channel.guild) return;
  let args = message.content.split(' ').slice(1).join(' ');
-    if(message.content.split(' ')[0] == prefix + 'bcp') {
+    if(message.content.split(' ')[0] == prefix + 'pbc') {
         if (!args[1]) {
-    message.channel.send(":white_check_mark: ***bcp <message>***");
+    message.channel.send(":white_check_mark: ***pbc <message>***");
     return;
     }
         message.guild.members.forEach(member => {
