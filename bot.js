@@ -54,7 +54,15 @@ client.on("message", message => {
 
  }
 });
-
+//test
+client.on('message' , message => {
+const room = message.guild.channels.find('name' , '✅-•-active-me-now-•');
+if(!room) return;
+if(includes(message.author)).then(m => {
+m.delete()
+message.delete()
+})
+});
 //active
 client.on('guildMemberAdd', (member) => {
 member.addRole(member.guild.roles.find('name', '-Guest-'));
