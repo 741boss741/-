@@ -84,7 +84,7 @@ client.on('message', message => {
                                    message.member.removeRole(message.guild.roles.find("name", "-Guest-"));
                                    msg.delete();
                                    message.channel.send(`** :smile: .تم تفعيلك العب يكبير**`).then(m => m.delete(1000));
-     
+                                   message.delete();
                                    })
                                    })
                                    }
