@@ -105,10 +105,8 @@ client.on('message', message => {
 client.on('message' , message => {
 const room = message.guild.channels.find('name' , '✅-•-active-me-now-•');
 if(!room) return;
-                               active.on("collect", h => {
                                    msg.delete();
                                    message.delete();
-                                   })
 });
 
 //dm help
