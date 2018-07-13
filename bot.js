@@ -69,7 +69,7 @@ client.on ("guildMemberRemove", member => {
 
 //active
 client.on('guildMemberAdd', (member) => {
-member.addRole(member.guild.roles.find('name', 'not active'));
+member.addRole(member.guild.roles.find('name', '-Guest-'));
 });
 
 
@@ -95,8 +95,8 @@ client.on('message', message => {
                                    message.member.addRole(message.guild.roles.find("name", "-Member-"));
                                    message.member.removeRole(message.guild.roles.find("name", "-Guest-"));
                                    msg.delete();
-                                   message.channel.send(`** :smile: .تم تفعيلك العب يكبير**`).then(m => m.delete(3000));
-                                   message.delete();
+                                   message.channel.send(`** :smile: .تم تفعيلك العب يكبير**`).then(m => m.delete(1000));
+     
                                    })
                                    })
                                    }
