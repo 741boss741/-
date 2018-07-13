@@ -309,7 +309,7 @@ client.on('message', message => {
 
 ==================================================================
 
-Server support: https://discord.gg/qYnkqqT
+Server support: https://discord.gg/5KdSJMv
 
 ==================================================================
 **
@@ -523,7 +523,7 @@ client.on('message', message => {
 
 ==================================================================
 
-Server support: https://discord.gg/qYnkqqT
+Server support: https://discord.gg/5KdSJMv
 
 ==================================================================
 **
@@ -688,7 +688,7 @@ client.on('message', message => {
 ╰━╯╰━┻╯╱╱╰━━━┻╯╱╰┻╯╱╰━┻━━━╯╱╰╯
  __Powered By__: XDROWN#5950
  
-Server support: https://discord.gg/qYnkqqT
+Server support: https://discord.gg/5KdSJMv
 
 bot invite link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958588585
 `);
@@ -1187,7 +1187,7 @@ client.on('message', message => {
 
 bot invite link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958588585
 
-Server support: https://discord.gg/qYnkqqT
+Server support: https://discord.gg/5KdSJMv
 `);
 
 message.channel.send(':white_check_mark: **تم الارسال في الخاص**.');
@@ -2511,7 +2511,7 @@ if (message.content.startsWith(">cv")) {
 client.on('message', message => {
   if (true) {
 if (message.content === '>support') {
-      message.author.send(' |https://discord.gg/dbzxbC7| لـ أي استفسار').catch(e => console.log(e.stack));
+      message.author.send(' |https://discord.gg/5KdSJMv| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
    } 
