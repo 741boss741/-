@@ -2114,7 +2114,7 @@ message.channel.sendEmbed(embed).then();
 //لون اسود
 
 
- let y1Filter = (reaction, user) => reaction.emoji.name === '❤️' && user.id === message.author.id;
+ let y1Filter = (reaction, user) => reaction.emoji.name === '❤' && user.id === message.author.id;
      
        let y1 = msg.createReactionCollector(y1Filter, { time: 15000 });
       
@@ -2455,7 +2455,7 @@ client.on('message', async message => {
 
 //admins
 client.on('message', (message) => {
-    if (message.content.startsWith('.kick')) {
+    if (message.content.startsWith('>kick')) {
       if(!message.member.hasPermission('KICK_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.kick().then((member) => {
@@ -2468,7 +2468,7 @@ client.on('message', (message) => {
 
 
 client.on('message', (message) => {
-    if (message.content.startsWith('.ban ')) {
+    if (message.content.startsWith('>ban ')) {
       if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.ban().then((member) => {
@@ -2480,7 +2480,7 @@ client.on('message', (message) => {
 });
   
   client.on("message", (message) => {
-    if (message.content.startsWith('.delet')) {
+    if (message.content.startsWith('>delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
@@ -2491,7 +2491,7 @@ client.on('message', (message) => {
 });
 
 client.on("message", (message) => {
-if (message.content.startsWith(".ct")) {
+if (message.content.startsWith(">ct")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'text');
@@ -2500,37 +2500,13 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 }
 });
 client.on("message", (message) => {
-if (message.content.startsWith(".cv")) {
+if (message.content.startsWith(">cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
     message.channel.sendMessage('تـم إنـشاء روم صـوتي')
     
 }
-});
-
-client.on('message', message => {
-  if (true) {
-if (message.content === '!>support') {
-      message.author.send(' |https://discord.gg/dbzxbC7| لـ أي استفسار').catch(e => console.log(e.stack));
-
-    }
-   } 
-  });
-  
-  
-
-client.on('message', message => {
-     if (message.content === "!>support") {
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#9B59B6")
-  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
-     
-     
-     
-  message.channel.sendEmbed(embed);
-    }
 });
 
 client.on("message", message => {
