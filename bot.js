@@ -55,6 +55,53 @@ client.on("message", message => {
  }
 });
 
+//rank
+ client.on ("guildMemberAdd", member => {
+  
+   var role = member.guild.roles.find ("name", "-Guest-");
+   member.addRole (role);
+  
+})
+
+clint.on ("guildMemberRemove", member => {
+   
+}); 
+
+//active
+client.on('guildMemberAdd', (member) => {
+member.addRole(member.guild.roles.find('name', 'not active'));
+});
+
+
+client.on('message', message => {                      
+    if(!message.channel.guild) return;
+       if(message.content.startsWith(prefix + 'active')) {
+        let modlog = client.channels.find('name', '✅-•-active-me-now-•');
+       if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
+       message.channel.sendMessage(`اضغط على الصح عشان تتفعل`).then(msg => {
+        
+        
+        msg.react('✅')
+       .then(() => msg.react('✅'))
+     
+     
+
+       let activeFilter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;
+     
+       let active = msg.createReactionCollector(activeFilter, { time: 15000 });
+     
+                                                        
+                               active.on("collect", r => {
+                                   message.member.addRole(message.guild.roles.find("name", "-Member-"));
+                                   message.member.removeRole(message.guild.roles.find("name", "-Guest-"));
+                                   msg.delete();
+                                   message.channel.send(`** :smile: .تم تفعيلك العب يكبير**`).then(m => m.delete(1000));
+     
+                                   })
+                                   })
+                                   }
+                                   });
+
 //dm help
 
 client.on('message', message => {
