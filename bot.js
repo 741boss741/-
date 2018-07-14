@@ -101,7 +101,7 @@ const embed = new Discord.RichEmbed()
                                    msg.delete();
                                  const embed = new Discord.RichEmbed()
                                    .setColor("RANDOM")
-                                   .addField("** :smile: .تم تفعيلك العب يكبير***", true)
+                                   .addField("** :smile: .تم تفعيلك العب يكبير**", true)
                                    message.channel.send({embed}).then(m => m.delete(1000));
                                    message.delete();
                                    })
