@@ -42,13 +42,14 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField(" XPlanet is Here", true)
-      
-      .addField("XDROWN#5950 : Dev", true)
-      
-      .addField("❖ >help-ar ➾ help by arabic", true)
+      .setDescription(`
+❖ Bot Name ➾ XPlanet ⚡⚡
 
-        .addField("❖ >help-en ➾ help by english", true)
+❖ Developer ➾ XDROWN#5950
+
+❖ >help-ar ➾ help by arabic
+
+❖ >help-en ➾ help by english`)
       
   message.channel.sendMessage({embed});
 
