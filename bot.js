@@ -54,6 +54,20 @@ client.on("message", message => {
 
  }
 });
+
+//active-delete
+client.on('message', message => {
+  var sender = message.author;
+  var msg = message.content.toUpperCase();
+  
+  
+  if (message.channel.id === '467353843194134538') {
+     if (isNaN(message.content)) {
+        message.delete()
+}
+          }
+          });
+
 //test
 client.on('message' , message => {
 const room = message.guild.channels.find('name' , '✅-•-active-me-now-•');
