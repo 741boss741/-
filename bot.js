@@ -110,25 +110,23 @@ const embed = new Discord.RichEmbed()
                                    }
                                    });
 //dm help
-
-client.on('message', message => {
+client.on("message", message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-en") {
 		 message.channel.send(':white_check_mark: **The Message Was Sent On Private**');
-            
-	
-		 
-
-
- message.author.sendMessage(`
+  const embed = new Discord.RichEmbed() 
+      .setColor("RANDOM")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`
  **
-__~~XPlanet Bot~~__ By: XDROWN#5950
-╭━╮╭━┳━━━┳╮╱╱╭━━━┳━╮╱╭┳━━━┳━━━━╮
-╰╮╰╯╭┫╭━╮┃┃╱╱┃╭━╮┃┃╰╮┃┃╭━━┫╭╮╭╮┃
-╱╰╮╭╯┃╰━╯┃┃╱╱┃┃╱┃┃╭╮╰╯┃╰━━╋╯┃┃╰╯
-╱╭╯╰╮┃╭━━┫┃╱╭┫╰━╯┃┃╰╮┃┃╭━━╯╱┃┃
-╭╯╭╮╰┫┃╱╱┃╰━╯┃╭━╮┃┃╱┃┃┃╰━━╮╱┃┃
-╰━╯╰━┻╯╱╱╰━━━┻╯╱╰┻╯╱╰━┻━━━╯╱╰╯
+__~~PowerX Bot~~__ By: XDROWN#5950
+╔═╗╔═╦═══╦╗──╔═══╦═╗─╔╦═══╦════╗
+╚╗╚╝╔╣╔═╗║║──║╔═╗║║╚╗║║╔══╣╔╗╔╗║
+─╚╗╔╝║╚═╝║║──║║─║║╔╗╚╝║╚══╬╝║║╚╝
+─╔╝╚╗║╔══╣║─╔╣╚═╝║║╚╗║║╔══╝─║║
+╔╝╔╗╚╣║──║╚═╝║╔═╗║║─║║║╚══╗─║║
+╚═╝╚═╩╝──╚═══╩╝─╚╩╝─╚═╩═══╝─╚╝
+
 ╔[❖════════════❖]╗
              Prefix = ' > '
 ╚[❖════════════❖]╝
@@ -163,14 +161,9 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 
 ❖ >uchat ➾ لفتح الشات
 
-
 ╔[❖════════════❖]╗
           General  Commands
 ╚[❖════════════❖]╝
-
-❖ >help-ar ➾ help by arabic
-
-❖ >help-en ➾ help by english
 
 ❖ >roll <number> ➾ role 
 
@@ -191,8 +184,6 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 ❖ >infobot ➾ to see bot uptime
 
 ❖ >own ➾ bot owner
-
-❖ >id ➾ your id (SooN)
 
 ❖ >avatar ➾ your avatar account
 
@@ -225,26 +216,31 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 ╚[❖════════════❖]╝
 
 to enable welcome message do channel name "welcome"
+
 to enable log message do channel name "log"
 **
-`);
+`)
 
-    }
+
+message.author.sendEmbed(embed)
+
+.catch(() => {
+  message.channel.send('🚫الخاص مغلق');
 });
+
+}
+}); 
 
 
 //help2
-client.on('message', message => {
+client.on("message", message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-en-2") {
 		 message.channel.send(':white_check_mark: **The Message Was Sent On Private**');
-            
-	
-		 
-
-
- message.author.sendMessage(`
-**
+  const embed = new Discord.RichEmbed() 
+      .setColor("RANDOM")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`**
 ╔[❖════════════❖]╗
            Games Commands
 ╚[❖════════════❖]╝
@@ -307,37 +303,43 @@ client.on('message', message => {
 
 ❖ >vol <amount> ➾ To control the sound
 
-==================================================================
+===========================================
 
 Server support: https://discord.gg/5KdSJMv
 
-==================================================================
+===========================================
 **
-`);
+`)
 
-    }
+
+message.author.sendEmbed(embed)
+
+.catch(() => {
+  message.channel.send('🚫الخاص مغلق');
 });
+
+}
+}); 
+
 
 //help-ar
 
-client.on('message', message => {
+client.on("message", message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-ar") {
-		 message.channel.send(':white_check_mark: **The Message Was Sent On Private**');
-            
-	
-		 
+		 message.channel.send(':white_check_mark: **تم ارسال الأوامر في الخاص**');
+  const embed = new Discord.RichEmbed() 
+      .setColor("RANDOM")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`**
+__~~PowerX Bot~~__ By: XDROWN#5950
+╔═╗╔═╦═══╦╗──╔═══╦═╗─╔╦═══╦════╗
+╚╗╚╝╔╣╔═╗║║──║╔═╗║║╚╗║║╔══╣╔╗╔╗║
+─╚╗╔╝║╚═╝║║──║║─║║╔╗╚╝║╚══╬╝║║╚╝
+─╔╝╚╗║╔══╣║─╔╣╚═╝║║╚╗║║╔══╝─║║
+╔╝╔╗╚╣║──║╚═╝║╔═╗║║─║║║╚══╗─║║
+╚═╝╚═╩╝──╚═══╩╝─╚╩╝─╚═╩═══╝─╚╝
 
-
- message.author.sendMessage(`
- **
-__~~XPlanet Bot~~__ By: XDROWN#5950
-╭━╮╭━┳━━━┳╮╱╱╭━━━┳━╮╱╭┳━━━┳━━━━╮
-╰╮╰╯╭┫╭━╮┃┃╱╱┃╭━╮┃┃╰╮┃┃╭━━┫╭╮╭╮┃
-╱╰╮╭╯┃╰━╯┃┃╱╱┃┃╱┃┃╭╮╰╯┃╰━━╋╯┃┃╰╯
-╱╭╯╰╮┃╭━━┫┃╱╭┫╰━╯┃┃╰╮┃┃╭━━╯╱┃┃
-╭╯╭╮╰┫┃╱╱┃╰━╯┃╭━╮┃┃╱┃┃┃╰━━╮╱┃┃
-╰━╯╰━┻╯╱╱╰━━━┻╯╱╰┻╯╱╰━┻━━━╯╱╰╯
 ╔[❖════════════❖]╗
                   Prefix = ' > '
 ╚[❖════════════❖]╝
@@ -368,10 +370,6 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
                     اوامر عامة
 ╚[❖════════════❖]╝
 
-❖ >help-ar ➾ المساعدة في العربي
-
-❖ >help-en ➾ المساعدة في الانجليزيلة
-
 ❖ >ping ➾ عرض سرعه اتصال البوت
 
 ❖ >bot ➾ معلومات البوت
@@ -379,10 +377,6 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 ❖ >server ➾ معلومات السيرفر
 
 ❖ >invite ➾ رابط دعوة البوت
-
-❖ >help-ar ➾ للمساعدة بالغة العربية
-
-❖ >help-en ➾ للمساعدة بالغة الأنجليزيه
 
 ❖ >roll <number> ➾ قرعه 
 
@@ -404,8 +398,6 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 
 ❖ >own ➾ مبرمج البوت
 
-❖ >id ➾ هويتك (SooN)
-
 ❖ >avatar ➾ الأفاتار الخاص بك
 
 ❖ >ping ➾ لتري البينج الخاص بك
@@ -420,7 +412,7 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 
 ❖ >colors ➾ لأختيار الألوان التي تريدها
 
-❖ >ccolors ➾ لصناعة الألوان الخاصة بالبوت [مهمة لكي يعمل البوت]
+❖ >ccolors ➾ لصناعة الألوان الخاصة بالبوت
 
 ❖ >rmcolors ➾ لأزالة الألوان الخاصه بالبوت
 
@@ -437,26 +429,30 @@ __~~XPlanet Bot~~__ By: XDROWN#5950
 ╚[❖════════════❖]╝
 
 لتفعيل خاصية الترحيب قم بعمل قناة اسمها "welcome"
+
 لتفعيل خاصية اللوج قم بعمل قناة اسمها "log"
 **
-`);
+`)
 
-    }
+
+message.author.sendEmbed(embed)
+
+.catch(() => {
+  message.channel.send('🚫الخاص مغلق');
 });
 
+}
+}); 
 
 //help2
-client.on('message', message => {
+client.on("message", message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-ar-2") {
-		 message.channel.send(':white_check_mark: **The Message Was Sent On Private**');
-            
-	
-		 
-
-
- message.author.sendMessage(`
-**
+		 message.channel.send(':white_check_mark: **تم ارسال الأوامر في الخاص**');
+  const embed = new Discord.RichEmbed() 
+      .setColor("RANDOM")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`**
 ╔[❖════════════❖]╗
                    اوامر الألعاب
 ╚[❖════════════❖]╝
@@ -521,37 +517,23 @@ client.on('message', message => {
 
 ❖ >vol <amount> ➾ للتحكم في الصوت
 
-==================================================================
+===========================================
 
 Server support: https://discord.gg/5KdSJMv
 
-==================================================================
+===========================================
 **
-`);
+`)
 
-    }
+
+message.author.sendEmbed(embed)
+
+.catch(() => {
+  message.channel.send('🚫الخاص مغلق');
 });
 
-//restart
-  client.on('message',async message => {
-    if(message.content.startsWith(prefix + "restart")) {
-        if(message.author.id !== "228174175007801354") return message.reply('You aren\'t the bot owner.');
-        message.channel.send('**Restarting.**').then(msg => {
-            setTimeout(() => {
-               msg.edit('**Restarting..**');
-            },1000);
-            setTimeout(() => {
-               msg.edit('**Restarting...**');
-            },2000);
-        });
-        console.log(`${message.author.tag} [ ${message.author.id} ] has restarted the bot.`);
-        console.log(`Restarting..`);
-        setTimeout(() => {
-            client.destroy();
-            client.login('NDU5NDc2NjQ4MDkwMTQwNjcy.DhsxBg.sinkP3tyZTQzNhs7LT5X3Lvwvzg');
-        },3000);
-    }
-});
+}
+}); 
 
 //welcome inv
 client.on('message', message =>{
