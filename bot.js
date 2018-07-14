@@ -79,7 +79,10 @@ client.on('message', message => {
        if(message.content.startsWith(prefix + 'active')) {
         let modlog = client.channels.find('name', '✅-•-active-me-now-•');
        if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-       message.channel.sendMessage(`اضغط على الصح عشان تتفعل`).then(msg => {
+const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .addField(" اضغط علي الصح عشان تتفعل.", true)
+       message.channel.sendMessage({embed}).then(msg => {
         
         
         msg.react('✅')
@@ -96,13 +99,15 @@ client.on('message', message => {
                                    message.member.addRole(message.guild.roles.find("name", "-Member-"));
                                    message.member.removeRole(message.guild.roles.find("name", "-Guest-"));
                                    msg.delete();
-                                   message.channel.send(`** :smile: .تم تفعيلك العب يكبير**`).then(m => m.delete(1000));
+                                 const embed = new Discord.RichEmbed()
+                                   .setColor("RANDOM")
+                                   .addField("** :smile: .تم تفعيلك العب يكبير***", true)
+                                   message.channel.send({embed}).then(m => m.delete(1000));
                                    message.delete();
                                    })
                                    })
                                    }
                                    });
-
 //dm help
 
 client.on('message', message => {
