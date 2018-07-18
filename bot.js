@@ -38,23 +38,35 @@ client.on("message", message => {
              
      if(!message.channel.guild) return;
 
- if (message.content === ">help") {
-   message.react("😜")
+ if (message.content === "!>help") {
+   message.react("✅")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
+      .setThumbnail(message.author.avatarURL)
       .setDescription(`
-❖ Bot Name ➾ XPlanet ⚡⚡
+**Helping Commands :**
 
-❖ Developer ➾ XDROWN#5950
+**❖ Admin Help ➾** >help admin
 
-❖ >help-ar ➾ help by arabic
+**❖ General Help ➾** >help general
 
-❖ >help-en ➾ help by english`)
-      
+**❖ Games Help ➾** >help games
+
+**❖ Quran Help ➾** >help quran
+
+**❖ Soundboard Help ➾** >help sb
+
+**❖ Music Help ➾** >help Music
+**.**
+`)
+       .setTimestamp()
+       .setFooter(message.author.username, message.author.avatarURL)
+
   message.channel.sendMessage({embed});
 
  }
 });
+
 
 //active-delete
 client.on('message', message => {
