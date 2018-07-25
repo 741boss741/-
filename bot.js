@@ -34,13 +34,13 @@ client.user.setGame("For Help type - >help - Enjoy!");
 });
 
 client.on('message', message => {
-    if(message.content == ('!id')) {    
+    if(message.content == ('>id')) {    
  
              if (message.channel.type === 'dm') return message.reply('This Command Is Not Avaible In Dm\'s :x:');   
             var Canvas = module.require('canvas');
             var jimp = module.require('jimp');
     
-     const w = ['./img/ID5.png'];
+     const w = ['./img/ID1.png', './img/ID2.png', './img/ID3.png', './img/ID4.png', './img/ID5.png'];
     
              let Image = Canvas.Image,
                  canvas = new Canvas(802, 404),
