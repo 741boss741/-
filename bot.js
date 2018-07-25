@@ -9,7 +9,7 @@ const prefix = '>'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(">Help - For Help);
+client.user.setGame(">Help - For Help");
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
