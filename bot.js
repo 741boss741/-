@@ -944,7 +944,7 @@ client.on('message', message => {
 ╰━━━┻╯╰┻╯╰╯╰┻━━━┻┻━━┻━━╯
  __Powered By__: XDROWN#5950
  
-Server support: https://discord.gg/5KdSJMv
+Server support: https://discord.gg/NHpq7gT
 
 bot invite link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958588585
 `);
@@ -1386,7 +1386,7 @@ client.on('message', message => {
 
 bot invite link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958588585
 
-Server support: https://discord.gg/5KdSJMv
+Server support: https://discord.gg/NHpq7gT
 `);
 
 message.channel.send(':white_check_mark: **تم الارسال في الخاص**.');
