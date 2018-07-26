@@ -3836,22 +3836,16 @@ if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return 
     }
 });
 
-client.on("guildCreate", guild => {
-    let embed = new Discord.RichEmbed () 
-    .setTitle('Bot Logs')
-    .addField(' ***Bot joined to :***[' + `${guild.name}` + ']   **By : **' + `${guild.owner.user.username}` + '')
-    .setFooter('The bot is happy')
-    .setTimestamp()
-    client.channels.get("468462509972783104").send(embed)
-  });
+ client.on('guildCreate', guild => {
+  client.channels.get("468462509972783104").send(`**تم اضافة البوت في سيرفر جديد مبروكك
+اسم السيرفر: __${guild.name}__
+اونر السيرفر: __${guild.owner}__**`)
+}); 
 
-  client.on("guildDelete", guild => {
-  let embed = new Discord.RichEmbed ()
-  .setTitle('Bot Logs')
-  .addField(' ***Bot left from :***[' + `${guild.name}` + ']     **By : **' + `${guild.owner.user.username}` +  ' ')
-  .setFooter('The bot is crying')
-  .setTimestamp()
-  client.channels.get("468462509972783104").send(embed)
-});
+ client.on('guildDelete', guild => {
+  client.channels.get("468462509972783104").send(`**تم ازالة البوت من سيرفر احزنني ينقم
+اسم السيرفر: __${guild.name}__
+اونر السيرفر: __${guild.owner}__**`)
+}); 
 
 client.login(process.env.BOT_TOKEN);
