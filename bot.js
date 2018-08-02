@@ -3836,17 +3836,20 @@ if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return 
     }
 });
 
- client.on('guildCreate', guild => {
-  client.channels.get("468462509972783104").send(`**تم اضافة البوت في سيرفر جديد مبروكك
-اسم السيرفر: __${guild.name}__
-اونر السيرفر: __${guild.owner}__**`)
-}); 
-
- client.on('guildDelete', guild => {
-  client.channels.get("468462509972783104").send(`**تم ازالة البوت من سيرفر احزنني ينقم
-اسم السيرفر: __${guild.name}__
-اونر السيرفر: __${guild.owner}__**`)
-}); 
+client.on('guildCreate', guild => {
+  client.channels.get("468462509972783104").send(`:white_check_mark: **تم اضافة البوت في سيرفر جديد مبروكك
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__
+Server id: __${guild.id}__ 
+Server Count: __${guild.memberCount}__**`)
+});
+client.on('guildDelete', guild => {
+  client.channels.get("468462509972783104").send(`:negative_squared_cross_mark: **طردوني حرام والله ايش سويت انا
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__
+Server id: __${guild.id}__ 
+Server Count: __${guild.memberCount}__**`)
+});
 
 client.on('guildMemberAdd', member => {
     const botCount = member.guild.members.filter(m=>m.user.bot).size
