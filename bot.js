@@ -3974,7 +3974,7 @@ client.on ("guildMemberAdd", member => {
   
 })
 
-clint.on ("guildMemberRemove", member => {
+client.on ("guildMemberRemove", member => {
    
 })
 
