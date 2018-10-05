@@ -3969,7 +3969,7 @@ client.on('guildMemberRemove', member => {
 
 client.on ("guildMemberAdd", member => {
   
-   var role = member.guild.roles.find ("name", "✴•『 Regular』•");
+   var role = member.guild.roles.find ("name", "Regular");
    member.addRole (role);
   
 })
