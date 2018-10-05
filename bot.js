@@ -3967,4 +3967,15 @@ client.on('guildMemberRemove', member => {
     client.channels.get('473609527195992074').setName(`⟫『 ${botCount} عدد البوتات 』⟪`);
 });
 
+client.on ("guildMemberAdd", member => {
+  
+   var role = member.guild.roles.find ("name", "✴•『 Regular』•");
+   member.addRole (role);
+  
+})
+
+clint.on ("guildMemberRemove", member => {
+   
+})
+
 client.login(process.env.BOT_TOKEN);
